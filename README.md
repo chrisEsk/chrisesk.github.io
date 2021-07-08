@@ -1,5 +1,9 @@
+Work in `develop` as usual, commit the process as normal, then just execute `deploy.sh`. This publishes the dist to master, and updates the page.
+
 In case deploy.sh gives issues,
 
+
+ref: https://stackoverflow.com/a/64840744
 ```
 Open git bash terminal
 type ssh-keygen and hit enter
