@@ -1,0 +1,19 @@
+{
+  "name": "chrisesk",
+  "version": "0.0.1",
+  "description": "Personal site",
+  "main": "index.js",
+  "authors": {
+    "name": "Christian Esquivel",
+    "email": "chrisesk.dev@gmail.com"
+  },
+  "repository": "chrisesk.github.io/chrisesk",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
