@@ -4,23 +4,23 @@
 
 ### ‣ Software Engineer, Gorilla Logic
 
-**Costa Rica ― September 2019 – Current**
+**Costa Rica ― September 2019 – November 2021**
 
 <a href="http://www.gorillalogic.com/" target="_blank">
   <img width="280" src="/logo_gl.png" alt="">
 </a>
 
-This position requires strong technical skills, sharp communication, continuous learning spikes for new technologies and
+This position required strong technical skills, sharp communication, continuous learning spikes for new technologies and
 adapting to new practices.
 
 #### Home Owners Association
 
 Worked in a large scale operation series of micro-frontends that integrates/refactors legacy functionalities into a
 modern web-based ecosystem.
-Primarily as an **Angular** developer using **Angular Elements, NgRx, Nrwl Nx, AG-Grid, functional unit testing and
+Primarily as an **Angular** developer using **Elements, NgRx, Nrwl Nx, AG-Grid, functional unit testing and
 more**. I also gained some experience using **.Net Entity framework**.
 
-I also became a Certified SAFe® Practitioner and learned a lot about how HOA's operate.
+I also became a [Certified SAFe® Practitioner](https://www.scaledagileframework.com/) and learned a lot about how HOA's operate.
 
 #### E-commerce
 
@@ -44,7 +44,7 @@ development. I wrote a blog about this topic which can be found
 
 **Costa Rica ― 2019**
 
-Developed from scratch the app and backend for Importaciónes Lapa, using **Ionic, Typescript, Rxjs and Parse-server**.
+Developed from scratch the app and backend for Importaciónes Lap, using **Ionic, Typescript, Rxjs and Parse-server**.
 Importaciones Lapa is Costa Rica's distributor for the worldwide renown Total Lubricants brand. This app takes orders
 daily from gas stations and oil centers all over the country, demanding 24/7 availability.
 
@@ -56,9 +56,8 @@ daily from gas stations and oil centers all over the country, demanding 24/7 ava
   <img width="280" src="/logo_miguitas.png" alt="">
 </a>
 
-An implementation of a PWA e-commerce framework I developed using Parse, Node.js, Angular, Typescript, Ionic, Handlebars
-(for email templates), and Trello API.
-I also did some Dev Ops work by creating and automating the process of order management for the business.
+An implementation of a PWA e-commerce framework I developed using Parse, Node.js, Angular, Typescript, Ionic, Handlebars, and Trello API.
+I also did some DevOps work by creating and automating the process of orders management for the business.
 
 ### ‣ Tech Lead and Fullstack Developer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
 
@@ -82,9 +81,7 @@ Designed and implemented features such as:
 - Events + Chromecast integration
 - Hashtags
 - Notifications
-Experience leading a small team of developers in an agile environment.
-
-[El Artesano App](http://www.elartesanoapp.com/) is available as a free download for Android and iOS.
+Experience leading a small team of developers in an Waterfall/Kanban environment.
 
 ### ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup
 
@@ -94,6 +91,6 @@ Experience leading a small team of developers in an agile environment.
   <img width="280" src="/logo_treeseed.png" alt="">
 </a>
 
-Designed, developed and maintained features both frontend and backend using **AngularJS, Bootstrap, Java (Spring, Spring
+Developed and maintained features both frontend and backend using **AngularJS, Bootstrap, Java (Spring, Spring
 Boot) and MySQL.**
 Implemented **Stripe API** for online payments and **D3.js** for data visualization.

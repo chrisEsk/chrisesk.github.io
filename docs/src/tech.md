@@ -16,14 +16,13 @@ suites.
 - Ionic **speciality**
 - Nx
 - HTML + JS + SCSS
-- NgRx, RxJs
-- Vue
+- Rx, state management
 - Bootstrap, Foundation, Tailwind
 
 ### Backend
 
 - Parse Platform **speciality**
-- Node.js
+- Node
 - MongoDB
 - MySQL
 - Windows Server
@@ -62,3 +61,4 @@ Use of gitflow branching model.
 - Back4App
 - Cloudinary
 - GIMP
+- Figma
