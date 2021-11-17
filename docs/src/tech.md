@@ -27,10 +27,11 @@ suites.
 - MySQL
 - Windows Server
 
-### Testing Automation
+### Testing, Automation, Ci
 
 - Jenkins
-- Travis Ci
+- Travis
+- Github Actions
 - Mocha + Chai
 - `@angular/core/testing`
 

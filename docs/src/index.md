@@ -1,7 +1,7 @@
 ---
 home: true
 tagline: Software Engineer
-footer: "Last Modification: Nov 15th, 2021 | chrisesk.dev@gmail.com"
+footer: "Last Modification: Nov 17th, 2021 | chrisesk.dev@gmail.com"
 ---
 
 <p align="center">
@@ -34,7 +34,7 @@ footer: "Last Modification: Nov 15th, 2021 | chrisesk.dev@gmail.com"
 ### Introduction
 
 I'm a pragmatic leader, detail oriented professional with experience in <strong>e-commerce, crowdfunding platforms, home
-owner associations, QA, DevOps, entrepreneurship and project management</strong>. I specialize in sofware engineering development, both techincal and process side.
+owner associations, QA, DevOps, entrepreneurship and project management</strong>. I specialize in sofware engineering development, both technical and process side.
 
 I’ve worked with various technologies and tools for the development of hybrid apps.
 I enjoy working in a team environment and learning from others, as well as sharing my knowledge.

@@ -2,7 +2,7 @@
 
 > My full job experience is on my CV (email me if interested).
 
-### ‣ Software Engineer, Gorilla Logic
+### ‣ Senior Consultant, Gorilla Logic
 
 **Costa Rica ― September 2019 – November 2021**
 
@@ -44,7 +44,7 @@ development. I wrote a blog about this topic which can be found
 
 **Costa Rica ― 2019**
 
-Developed from scratch the app and backend for Importaciónes Lap, using **Ionic, Typescript, Rxjs and Parse-server**.
+Developed from scratch the app and backend for Importaciónes Lapa, using **Ionic, Typescript, Rxjs and Parse-server**.
 Importaciones Lapa is Costa Rica's distributor for the worldwide renown Total Lubricants brand. This app takes orders
 daily from gas stations and oil centers all over the country, demanding 24/7 availability.
 
