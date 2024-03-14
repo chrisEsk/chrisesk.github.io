@@ -1,3 +1,11 @@
+Usage:
+```
+nvm use 20.11.1
+cd docs
+npm i
+npm run dev
+```
+
 Work in `develop` as usual, commit the process as normal, then just execute `deploy.sh`. This publishes the dist to master, and updates the page.
 
 In case deploy.sh gives issues,

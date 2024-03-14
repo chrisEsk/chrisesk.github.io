@@ -14,18 +14,22 @@ suites.
 
 - Angular **speciality**
 - Ionic **speciality**
+- React, Vue, Svelte
 - Nx
 - HTML + JS + SCSS
 - Rx, state management
-- Bootstrap, Foundation, Tailwind
+- Bootstrap, Foundation, Tailwind, Material
 
 ### Backend
 
 - Parse Platform **speciality**
-- Node
+- NodeJs
+- Java (Spring)
 - MongoDB
-- MySQL
+- MySQL, PostgreSQL
+- Supabase
 - Windows Server
+- AWS (Lambda, S3, Secrets Manager, API Gateway, DynamoDB)
 
 ### Testing, Automation, Ci
 
@@ -34,12 +38,7 @@ suites.
 - Github Actions
 - Mocha + Chai
 - `@angular/core/testing`
-
-### Java
-
-- General-purpose programming
-- Spring
-- JSP / JSTL
+- Jest
 
 ### .NET
 
@@ -58,6 +57,7 @@ Use of gitflow branching model.
 - Chromecast SDK
 - Cheetahmail
 - Oracle Commerce Platform
+- Google Ads Manager
 - Heroku
 - Back4App
 - Cloudinary
