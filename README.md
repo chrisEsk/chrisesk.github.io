@@ -1,6 +1,6 @@
 Usage:
 ```
-nvm use 20.11.1
+nvm use 16.20.2
 cd docs
 npm i
 npm run dev
