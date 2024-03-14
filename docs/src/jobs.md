@@ -6,13 +6,13 @@ Due to privacy of my clients and confidenciality of projects, this page has been
 
 ### ‣ Sr Adv Engineer (Web UI Studio), Globant
 
-**Costa Rica ― September 2021 – Current**
+**Costa Rica ― December 2021 – Current**
 
 <a href="http://www.globant.com/" target="_blank">
   <img width="220" src="/logo_globant.png" alt="">
 </a>
 
-As a Tech Lead and Software Designer, I provide technical direction, oversee application development, conduct code reviews, allocate tasks, solve technical issues, and foster collaboration within development teams. I also design high-level structures, establish coding standards, manage risks, and communicate architectural decisions to stakeholders for various Fortune 500 companies.
+As a Tech Lead and Software Designer, I guide technical direction, manage application development, conduct code reviews, allocate tasks, troubleshoot technical issues, and promote team collaboration. Additionally, I create high-level structures, set coding standards, mitigate risks, and communicate architectural decisions to stakeholders across Fortune 500 companies.
 
 ### ‣ Senior Consultant, Gorilla Logic
 
@@ -29,7 +29,7 @@ development. I wrote a blog about this topic which can be found
 
 ### ‣ Software Architect and PO, [MiguitasBakery.com](https://miguitasbakery.com/), Independent Startup
 
-**Costa Rica ― 2016 - Current (side-project)**
+**Costa Rica ― 2016**
 
 <a href="https://www.miguitasbakery.com/" target="_blank">
   <img width="220" src="/logo_miguitas.png" alt="">
