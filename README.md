@@ -22,3 +22,7 @@ Go to C:\Users\<username>\.ssh and open a file named id_rsa.pub in notepad and c
 then go to your github account Settings and select the option SSH and GPS keys .
 Create a new ssh key with a title and the key you just copied (you just generated) hit save now if you try to push by git push origin master I hope you wont get any error
 ```
+
+Known errors:
+
+1. if ` modified:   docs/src/.vuepress/dist (new commits)` is enountered after deploying, just delete the dist folder and re run `npm run build` from /docs. The branch should be clean after that.
