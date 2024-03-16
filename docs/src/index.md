@@ -8,7 +8,7 @@ footer: "Last Modification: March 15th, 2024 | chrisesk.dev@gmail.com"
   <img style="border-radius:50%" width="180" src="/me.png" alt="">
 </p>
 
-### Personal Info
+## Personal Info
 
 <table>
   <tr>
@@ -29,9 +29,7 @@ footer: "Last Modification: March 15th, 2024 | chrisesk.dev@gmail.com"
   </tr>
 </table>
 
-<hr>
-
-### Introduction
+## Introduction
 
 I'm a pragmatic leader, detail oriented professional with experience in a diverse background of software engineering, including <strong>consulting, development, teaching, QA, DevOps, entrepreneurship and project management</strong>. I specialize in both technical and process side.
 
@@ -46,7 +44,7 @@ life.**
 
 <hr>
 
-### Languages
+## Languages
 
 - English: Native
 - Spanish: Native

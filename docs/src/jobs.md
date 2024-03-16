@@ -4,7 +4,7 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
 
 <hr>
 
-### ‣ Sr Adv Engineer (Web UI Studio), Globant
+## ‣ Sr Adv Engineer (Web UI Studio), Globant
 
 **Costa Rica ― December 2021 – Current**
 
@@ -14,7 +14,7 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
 
 As a Tech Lead and Software Designer, I guide technical direction, manage application development, conduct code reviews, allocate tasks, troubleshoot technical issues, and promote team collaboration. Additionally, I create high-level structures, set coding standards, mitigate risks, and communicate architectural decisions to stakeholders for various Fortune 500 listed companies.
 
-### ‣ Senior Consultant, Gorilla Logic
+## ‣ Senior Consultant, Gorilla Logic
 
 **Costa Rica ― September 2019 – November 2021**
 
@@ -26,7 +26,7 @@ I worked with various clients, including various e-commerce companies, a HOA in 
 development. I wrote a blog about this topic which can be found
 [here](https://gorillalogic.com/blog/why-and-when-you-should-consider-using-pwas/).
 
-### ‣ Tech Lead and Fullstack Engineer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
+## ‣ Tech Lead and Fullstack Engineer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
 
 **Costa Rica ― 2017 - 2018**
 
@@ -39,7 +39,7 @@ expanding to other countries.
 With +10,000 registered users both in Android and iOS, becoming the first social network in Costa Rica.
 Here, I gained experience leading a small team of developers in an agile environment and diving deep into full stack development.
 
-### ‣ Software Architect and PO, [MiguitasBakery.com](https://miguitasbakery.com/), Independent Startup
+## ‣ Software Architect and PO, [MiguitasBakery.com](https://miguitasbakery.com/), Independent Startup
 
 **Costa Rica ― 2016**
 
@@ -51,7 +51,7 @@ An implementation of a PWA e-commerce framework developed using Parse, NodeJs, A
 I also did some DevOps work by creating and automating the process of orders management for the business.
 
 
-### ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup
+## ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup
 
 **Costa Rica ― 2016 - 2017**
 
@@ -63,7 +63,7 @@ Developed and maintained features both frontend and backend for a crowdfunding p
 
 <hr>
 
-### ‣ Miscellaneous
+## ‣ Miscellaneous
 <br>
 
 <a href="https://www.newgrounds.com/portal/view/617935" target="_blank">
