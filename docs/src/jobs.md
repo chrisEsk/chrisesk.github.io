@@ -12,7 +12,7 @@ Due to privacy of my clients and confidenciality of projects, this page has been
   <img width="220" src="/logo_globant.png" alt="">
 </a>
 
-As a Tech Lead and Software Designer, I guide technical direction, manage application development, conduct code reviews, allocate tasks, troubleshoot technical issues, and promote team collaboration. Additionally, I create high-level structures, set coding standards, mitigate risks, and communicate architectural decisions to stakeholders across Fortune 500 companies.
+As a Tech Lead and Software Designer, I guide technical direction, manage application development, conduct code reviews, allocate tasks, troubleshoot technical issues, and promote team collaboration. Additionally, I create high-level structures, set coding standards, mitigate risks, and communicate architectural decisions to stakeholders for various Fortune 500 listed companies.
 
 ### ‣ Senior Consultant, Gorilla Logic
 
