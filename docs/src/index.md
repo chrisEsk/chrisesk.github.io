@@ -1,7 +1,7 @@
 ---
 home: true
 tagline: Software Engineer
-footer: "Last Modification: March 14th, 2024 | chrisesk.dev@gmail.com"
+footer: "Last Modification: March 15th, 2024 | chrisesk.dev@gmail.com"
 ---
 
 <p align="center">

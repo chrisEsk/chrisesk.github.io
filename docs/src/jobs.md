@@ -1,6 +1,6 @@
 # Experience
 
-Due to privacy of my clients and confidenciality of projects, this page has been trimmed of information. Please contact me at **chrisesk.dev@gmail.com** for my full CV.
+Due to privacy and confidenciality, this page has been trimmed of information. Please contact me at **chrisesk.dev@gmail.com** for my full CV.
 
 <hr>
 
@@ -26,6 +26,18 @@ I worked with various clients, including various e-commerce companies, a HOA in 
 development. I wrote a blog about this topic which can be found
 [here](https://gorillalogic.com/blog/why-and-when-you-should-consider-using-pwas/).
 
+### ‣ Tech Lead and Fullstack Engineer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
+
+**Costa Rica ― 2017 - 2018**
+
+<a href="http://www.elartesanoapp.com/" target="_blank">
+  <img width="220" src="/logo_artesano.png" alt="">
+</a>
+
+El Artesano App _was_ a virtual catalog and **social network** that follows the craft beer scene in Costa Rica and
+expanding to other countries.
+With +10,000 registered users both in Android and iOS, becoming the first social network in Costa Rica.
+Here, I gained experience leading a small team of developers in an agile environment and diving deep into full stack development.
 
 ### ‣ Software Architect and PO, [MiguitasBakery.com](https://miguitasbakery.com/), Independent Startup
 
@@ -38,18 +50,6 @@ development. I wrote a blog about this topic which can be found
 An implementation of a PWA e-commerce framework developed using Parse, NodeJs, Angular, Typescript, Ionic, Handlebars, and Trello API.
 I also did some DevOps work by creating and automating the process of orders management for the business.
 
-### ‣ Tech Lead and Fullstack Engineer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
-
-**Costa Rica ― 2017 - 2018**
-
-<a href="http://www.elartesanoapp.com/" target="_blank">
-  <img width="220" src="/logo_artesano.png" alt="">
-</a>
-
-El Artesano App _was_ a virtual catalog and **social network** that follows the craft beer scene in Costa Rica and
-expanding to other countries.
-With +10,000 registered users both in Android and iOS, becoming the first social network in Costa Rica.
-Here, I gained experience leading a small team of developers in an agile environment.
 
 ### ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup
 
