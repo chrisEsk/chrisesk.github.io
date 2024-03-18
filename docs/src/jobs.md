@@ -22,8 +22,7 @@ As a Tech Lead and Software Designer, I guide technical direction, manage applic
   <img width="220" src="/logo_gl.png" alt="">
 </a>
 
-I worked with various clients, including various e-commerce companies, a HOA in the USA and researched the benefits and limitations of building PWA’s and _when_ these should be considered over native
-development. I wrote a blog about this topic which can be found
+I collaborated with a diverse range of clients, spanning from e-commerce enterprises to a Homeowners Association (HOA) in the USA. My role involved comprehensive research into the advantages and constraints of Progressive Web Applications (PWAs), discerning precisely when PWAs should take precedence over native development solutions. I wrote a blog about this topic which can be found
 [here](https://gorillalogic.com/blog/why-and-when-you-should-consider-using-pwas/).
 
 ## ‣ Tech Lead and Fullstack Engineer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
@@ -47,8 +46,7 @@ Here, I gained experience leading a small team of developers in an agile environ
   <img width="220" src="/logo_miguitas.png" alt="">
 </a>
 
-An implementation of a PWA e-commerce framework developed using Parse, NodeJs, Angular, Typescript, Ionic, Handlebars, and Trello API.
-I also did some DevOps work by creating and automating the process of orders management for the business.
+In my role as Software Architect and Product Owner, I orchestrated the development of a PWA e-commerce framework using Parse, Node.js, Angular, TypeScript, Ionic, Handlebars, and integrated Trello API. Additionally, I implemented DevOps solutions, automating order management processes to optimize efficiency and enhance business operations.
 
 
 ## ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup
@@ -60,8 +58,6 @@ I also did some DevOps work by creating and automating the process of orders man
 </a>
 
 Developed and maintained features both frontend and backend for a crowdfunding platform.
-
-<hr>
 
 ## ‣ Miscellaneous
 <br>
