@@ -2,7 +2,6 @@
 
 Due to privacy and confidenciality, this page has been trimmed of information. Please contact me at **chrisesk.dev@gmail.com** for my full CV.
 
-<hr>
 
 ## ‣ Sr Adv Engineer (Web UI Studio), Globant
 
