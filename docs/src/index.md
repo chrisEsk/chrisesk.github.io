@@ -31,13 +31,11 @@ footer: "Last Modification: March 18th, 2024 | chrisesk.dev@gmail.com"
 
 ## Introduction
 
-I'm a pragmatic leader and detail-oriented professional with experience in a diverse background of software engineering, <strong>including consulting, development, teaching, QA, DevOps, entrepreneurship, and project management</strong>. I specialize in both technical and process sides.
+As a pragmatic leader in software engineering, I've gained diverse experience across consulting, development, teaching, QA, DevOps, entrepreneurship, and project management. Over the years, I've served as a software architect, tech lead, and designer for Fortune 500 clients since 2016.
 
-I've worked with an extensive list of technologies and tools that have allowed me to reach a level of software architect, tech lead, and designer for various Fortune 500 clients since 2016.
+I'm dedicated to continuous learning, exploring new technologies, and embracing experimentation. Colleagues have commended my quick learning abilities and adaptability across various tech ecosystems.
 
-I am a proactive person who is constantly experimenting with new tech. I like to explore uncharted territories and learn by doing. My colleagues praise me for being a very fast learner, regardless of the tech ecosystem.
-
-I believe excellence can only be achieved when you're passionate about what you're doing. This is something users can discern when using your solutions. I am grateful to say that I discovered my passion for software and technology early in life.
+I firmly believe that excellence stems from genuine passion for one's work, which has been a driving force since discovering my interest for software and technology early in life.
 
 
 ## Languages
