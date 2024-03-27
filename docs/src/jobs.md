@@ -3,6 +3,7 @@
 Due to privacy and confidenciality, this page has been trimmed of information. Please contact me at **chrisesk.dev@gmail.com** for my full CV.
 
 ## ‣ Timeline
+<!-- https://time.graphics/editor/899573?position=2023%2012%208,96.9,99.67,YEAR_2;1.66125 -->
 <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=899573" frameborder="0" allowfullscreen></iframe>
 
 ## ‣ Sr Adv Engineer (Web UI Studio), Globant
