@@ -2,6 +2,8 @@
 
 Due to privacy and confidenciality, this page has been trimmed of information. Please contact me at **chrisesk.dev@gmail.com** for my full CV.
 
+## ‣ Timeline
+<iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=899573" frameborder="0" allowfullscreen></iframe>
 
 ## ‣ Sr Adv Engineer (Web UI Studio), Globant
 
