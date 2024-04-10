@@ -4,63 +4,50 @@
     <img style="border-radius:10px" width="280" src="/logo_frameworks.png" alt="">
 </p>
 
-## Javascript, Typescript
-
-General purpose programming, scripting, web applications, hybrid mobile apps (Android, iOS), PWA’s, code refactoring and
-testing
-suites.
-
 ## Frontend
 
-### - Angular **speciality**
-### - Ionic **speciality**
-### - React, Vue, Svelte
-### - Nx
-### - HTML + JS + SCSS
-### - Rx, state management
-### - Bootstrap, Foundation, Tailwind, Material
+| Tools                                     | Stars |
+| ----------------------------------------- | ----- |
+| Angular                                   | ★★★★★ |
+| Ionic                                     | ★★★★★ |
+| Capacitor                                 | ★★★★☆ |
+| React, Vue, Svelte                        | ★★★☆☆ |
+| HTML + JS + SCSS                          | ★★★★★ |
+| Bootstrap, Material, Foundation, Tailwind | ★★★★☆ |
+| RxJS                                      | ★★★★★ |
+| Nx                                        | ★★★☆☆ |
 
+## Backend / General Purpose
 
-## Backend
+| Tools                                                    | Stars |
+| -------------------------------------------------------- | ----- |
+| Parse Platform                                           | ★★★★★ |
+| NodeJs                                                   | ★★★★☆ |
+| Heroku                                                   | ★★★★★ |
+| AWS (Lambda, S3, Secrets Manager, API Gateway, DynamoDB) | ★★★★☆ |
+| MySQL, PostgreSQL                                        | ★★★★★ |
+| Supabase                                                 | ★★☆☆☆ |
+| MongoDB                                                  | ★★★☆☆ |
+| C#                                                       | ★★★☆☆ |
+| Java                                                     | ★★★☆☆ |
+| Python                                                   | ★★★☆☆ |
+| Windows Server                                           | ★★★☆☆ |
+| Actionscript                                             | ★★★★☆ |
 
-### - Parse Platform **speciality**
-### - NodeJs
-### - Java (Spring)
-### - MongoDB
-### - MySQL, PostgreSQL
-### - Supabase
-### - Windows Server
-### - AWS (Lambda, S3, Secrets Manager, API Gateway, DynamoDB)
+## Other
 
-## Testing, Automation, Ci
-
-### - Jenkins
-### - Travis
-### - Github Actions
-### - Mocha + Chai
-### - `@angular/core/testing`
-### - Jest
-
-## .NET
-
-Some experience with C# and ASP.
-
-## UML
-
-For system design and OOP architecture.
-
-## Git SCM
-
-Use of gitflow branching model.
-
-## Other Platforms / Tools
-
-### - Chromecast SDK
-### - Cheetahmail
-### - Oracle Commerce Platform
-### - Google Ads Manager
-### - Heroku
-### - Back4App
-### - Cloudinary
-### - GIMP
-### - Figma
+| Tools                                    | Stars |
+| ---------------------------------------- | ----- |
+| Back4App                                 | ★★★★★ |
+| Unit Testing: Angular, Jest, Mocha, Chai | ★★★★★ |
+| Github Actions                           | ★★★★☆ |
+| UML                                      | ★★★★★ |
+| Cloudinary                               | ★★★★★ |
+| Figma                                    | ★★★★★ |
+| Chromecast SDK                           | ★★★★☆ |
+| GIMP                                     | ★★★★☆ |
+| Google Ads Manager                       | ★★☆☆☆ |
+| Jenkins                                  | ★★☆☆☆ |
+| Travis                                   | ★★★☆☆ |
+| Oracle Commerce Platform                 | ★★☆☆☆ |
+| Cheetahmail                              | ★★☆☆☆ |

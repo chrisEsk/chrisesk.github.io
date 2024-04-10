@@ -31,9 +31,9 @@ footer: "Last Modification: April 10th, 2024 | chrisesk.dev@gmail.com"
 
 ## Introduction
 
-As a pragmatic leader in software engineering, I've gained diverse experience across consulting, development, teaching, QA, DevOps, entrepreneurship, and project management.
+As a pragmatic leader in software engineering, I've gained diverse experience across consulting, development, teaching, QA, DevOps, entrepreneurship and project management.
 
-I'm dedicated to continuous learning, exploring new technologies, and embracing experimentation. Colleagues have commended my quick learning abilities and adaptability across various tech ecosystems.
+I'm dedicated to continuous learning, exploring new technologies, and embracing experimentation.
 
 I firmly believe that excellence stems from genuine passion for one's work, which has been a driving force since discovering my interest for software and technology early in life.
 
