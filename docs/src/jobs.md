@@ -14,7 +14,7 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
   <img width="220" src="/logo_globant.png" alt="">
 </a>
 
-I guide technical direction, manage application development (0 to 1 development), conduct code reviews, allocate tasks, troubleshoot technical issues, and promote B2B and B2C collaboration.
+Technical direction, application development (0 to 1 development), conduct code reviews, allocate tasks, troubleshoot technical issues and promote B2B and B2C collaboration.
 
 ## ‣ Senior Consultant, Gorilla Logic
 
@@ -37,7 +37,7 @@ I collaborated with a diverse range of clients, spanning from e-commerce enterpr
 I co-developed one of the first social networks in Costa Rica.
 Here, I gained experience leading a small team of developers in an agile environment and diving deep into full stack development.
 
-## ‣ Software Architect and PO, [MiguitasBakery.com](https://miguitasbakery.com/), Independent Startup
+## ‣ Software Architect and PO, [Miguitas Bakery](https://miguitasbakery.com/), Independent Startup
 
 **Costa Rica ― 2016**
 
@@ -45,7 +45,7 @@ Here, I gained experience leading a small team of developers in an agile environ
   <img width="220" src="/logo_miguitas.png" alt="">
 </a>
 
-I orchestrated the development of a PWA e-commerce framework using Parse, Node.js, Angular, TypeScript, Ionic, Handlebars, and Trello API. Additionally, I implemented DevOps solutions, automating order management processes to optimize efficiency and enhance business operations.
+0 to 1 development. Additionally, I implemented DevOps solutions, automating order management processes to optimize efficiency and enhance business operations.
 
 
 ## ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup

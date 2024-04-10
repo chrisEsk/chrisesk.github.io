@@ -4,50 +4,45 @@
     <img style="border-radius:10px" width="280" src="/logo_frameworks.png" alt="">
 </p>
 
-## Frontend
+## ★★★★★ - SME
+### - Angular + Typescript
+### - Ionic
+### - RxJS
+### - HTML + JS + SCSS
+### - Parse Platform (Server & Client)
+### - Back4App
 
-| Tools                                     | Stars |
-| ----------------------------------------- | ----- |
-| Angular                                   | ★★★★★ |
-| Ionic                                     | ★★★★★ |
-| Capacitor                                 | ★★★★☆ |
-| React, Vue, Svelte                        | ★★★☆☆ |
-| HTML + JS + SCSS                          | ★★★★★ |
-| Bootstrap, Material, Foundation, Tailwind | ★★★★☆ |
-| RxJS                                      | ★★★★★ |
-| Nx                                        | ★★★☆☆ |
+## ★★★★☆ - Expert
+### - Capacitor
+### - Bootstrap, Material, Foundation, Tailwind
+### - NodeJs
+### - Heroku
+### - MySQL, PostgreSQL
+### - UT: Jasmine, Karma, Cypress, Jest, Mocha, Chai
+### - Cloudinary
+### - Figma
+### - Chromecast SDK
 
-## Backend / General Purpose
+## ★★★☆☆ - Advanced
+### - React, Vue, Svelte
+### - Nx
+### - AWS (Lambda, S3, Secrets Manager, API Gateway, DynamoDB)
+### - C#
+### - Java
+### - Windows Server
+### - Actionscript
+### - Github Actions
+### - GIMP
 
-| Tools                                                    | Stars |
-| -------------------------------------------------------- | ----- |
-| Parse Platform                                           | ★★★★★ |
-| NodeJs                                                   | ★★★★☆ |
-| Heroku                                                   | ★★★★★ |
-| AWS (Lambda, S3, Secrets Manager, API Gateway, DynamoDB) | ★★★★☆ |
-| MySQL, PostgreSQL                                        | ★★★★★ |
-| Supabase                                                 | ★★☆☆☆ |
-| MongoDB                                                  | ★★★☆☆ |
-| C#                                                       | ★★★☆☆ |
-| Java                                                     | ★★★☆☆ |
-| Python                                                   | ★★★☆☆ |
-| Windows Server                                           | ★★★☆☆ |
-| Actionscript                                             | ★★★★☆ |
+## ★★☆☆☆ - Basic
+### - MongoDB
+### - Python
+### - Google Ads Manager
+### - Jenkins
+### - Travis
+### - Handlebars
 
-## Other
-
-| Tools                                    | Stars |
-| ---------------------------------------- | ----- |
-| Back4App                                 | ★★★★★ |
-| Unit Testing: Angular, Jest, Mocha, Chai | ★★★★★ |
-| Github Actions                           | ★★★★☆ |
-| UML                                      | ★★★★★ |
-| Cloudinary                               | ★★★★★ |
-| Figma                                    | ★★★★★ |
-| Chromecast SDK                           | ★★★★☆ |
-| GIMP                                     | ★★★★☆ |
-| Google Ads Manager                       | ★★☆☆☆ |
-| Jenkins                                  | ★★☆☆☆ |
-| Travis                                   | ★★★☆☆ |
-| Oracle Commerce Platform                 | ★★☆☆☆ |
-| Cheetahmail                              | ★★☆☆☆ |
+## ★☆☆☆☆ - Beginner
+### - Supabase
+### - Oracle Commerce Platform
+### - Cheetahmail
