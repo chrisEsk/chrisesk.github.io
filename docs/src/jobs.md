@@ -14,7 +14,7 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
   <img width="220" src="/logo_globant.png" alt="">
 </a>
 
-Technical direction, application development (0 to 1 development), conduct code reviews, allocate tasks, troubleshoot technical issues and promote B2B and B2C collaboration.
+Technical direction, application development (0 to 1 development), conduct code reviews, allocate tasks, troubleshoot technical issues, promote B2B and B2C collaboration.
 
 ## ‣ Senior Consultant, Gorilla Logic
 
@@ -24,7 +24,7 @@ Technical direction, application development (0 to 1 development), conduct code 
   <img width="220" src="/logo_gl.png" alt="">
 </a>
 
-I collaborated with a diverse range of clients, spanning from e-commerce enterprises to a Homeowners Association (HOA) in the USA.
+I collaborated with a diverse range of clients, spanning from e-commerce enterprises to a Homeowners Association (HOA) in the USA under an agile methodology.
 
 ## ‣ Tech Lead and Fullstack Engineer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
 
