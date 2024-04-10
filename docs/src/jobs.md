@@ -14,7 +14,7 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
   <img width="220" src="/logo_globant.png" alt="">
 </a>
 
-As a Tech Lead and Software Designer, I guide technical direction, manage application development, conduct code reviews, allocate tasks, troubleshoot technical issues, and promote team collaboration. Additionally, I create high-level structures, set coding standards, mitigate risks, and communicate architectural decisions to stakeholders for various Fortune 500 listed companies.
+I guide technical direction, manage application development (0 to 1 development), conduct code reviews, allocate tasks, troubleshoot technical issues, and promote B2B and B2C collaboration.
 
 ## ‣ Senior Consultant, Gorilla Logic
 
@@ -24,8 +24,7 @@ As a Tech Lead and Software Designer, I guide technical direction, manage applic
   <img width="220" src="/logo_gl.png" alt="">
 </a>
 
-I collaborated with a diverse range of clients, spanning from e-commerce enterprises to a Homeowners Association (HOA) in the USA. My role involved comprehensive research into the advantages and constraints of Progressive Web Applications (PWAs), discerning precisely when PWAs should take precedence over native development solutions. I wrote a blog about this topic which can be found
-[here](https://gorillalogic.com/blog/why-and-when-you-should-consider-using-pwas/).
+I collaborated with a diverse range of clients, spanning from e-commerce enterprises to a Homeowners Association (HOA) in the USA.
 
 ## ‣ Tech Lead and Fullstack Engineer, [El Artesano App](http://www.elartesanoapp.com/), Independent Startup
 
@@ -35,9 +34,7 @@ I collaborated with a diverse range of clients, spanning from e-commerce enterpr
   <img width="220" src="/logo_artesano.png" alt="">
 </a>
 
-El Artesano App _was_ a virtual catalog and **social network** that follows the craft beer scene in Costa Rica and
-expanding to other countries.
-With +10,000 registered users both in Android and iOS, becoming the first social network in Costa Rica.
+I co-developed one of the first social networks in Costa Rica.
 Here, I gained experience leading a small team of developers in an agile environment and diving deep into full stack development.
 
 ## ‣ Software Architect and PO, [MiguitasBakery.com](https://miguitasbakery.com/), Independent Startup
@@ -48,7 +45,7 @@ Here, I gained experience leading a small team of developers in an agile environ
   <img width="220" src="/logo_miguitas.png" alt="">
 </a>
 
-In my role as Software Architect and Product Owner, I orchestrated the development of a PWA e-commerce framework using Parse, Node.js, Angular, TypeScript, Ionic, Handlebars, and integrated Trello API. Additionally, I implemented DevOps solutions, automating order management processes to optimize efficiency and enhance business operations.
+I orchestrated the development of a PWA e-commerce framework using Parse, Node.js, Angular, TypeScript, Ionic, Handlebars, and Trello API. Additionally, I implemented DevOps solutions, automating order management processes to optimize efficiency and enhance business operations.
 
 
 ## ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup
@@ -59,7 +56,7 @@ In my role as Software Architect and Product Owner, I orchestrated the developme
   <img width="220" src="/logo_treeseed.png" alt="">
 </a>
 
-Developed and maintained features both frontend and backend for a crowdfunding platform.
+Developed and maintained both frontend and backend for a crowdfunding platform.
 
 ## ‣ Miscellaneous
 <br>

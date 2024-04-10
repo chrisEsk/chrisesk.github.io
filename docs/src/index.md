@@ -1,7 +1,7 @@
 ---
 home: true
 tagline: Software Engineer
-footer: "Last Modification: March 27th, 2024 | chrisesk.dev@gmail.com"
+footer: "Last Modification: April 10th, 2024 | chrisesk.dev@gmail.com"
 ---
 
 <p align="center">
@@ -31,7 +31,7 @@ footer: "Last Modification: March 27th, 2024 | chrisesk.dev@gmail.com"
 
 ## Introduction
 
-As a pragmatic leader in software engineering, I've gained diverse experience across consulting, development, teaching, QA, DevOps, entrepreneurship, and project management. Over the years, I've served as a software architect, tech lead, and designer for Fortune 500 clients since 2016.
+As a pragmatic leader in software engineering, I've gained diverse experience across consulting, development, teaching, QA, DevOps, entrepreneurship, and project management.
 
 I'm dedicated to continuous learning, exploring new technologies, and embracing experimentation. Colleagues have commended my quick learning abilities and adaptability across various tech ecosystems.
 
