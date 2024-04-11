@@ -6,7 +6,7 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
 <!-- https://time.graphics/editor/899573?position=2023%2012%208,96.9,99.67,YEAR_2;1.66125 -->
 <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=899573" frameborder="0" allowfullscreen></iframe>
 
-## ‣ Sr Adv Engineer (Web UI Studio), Globant
+## ‣ Sr Adv Web UI, [Globant](https://globant.com/)
 
 **Costa Rica ― December 2021 – Current**
 
@@ -16,7 +16,7 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
 
 Technical direction, application development (0 to 1 development), conduct code reviews, allocate tasks, troubleshoot technical issues, promote B2B and B2C collaboration.
 
-## ‣ Senior Consultant, Gorilla Logic
+## ‣ Senior Consultant, [Gorilla Logic](https://gorillalogic.com/)
 
 **Costa Rica ― September 2019 – November 2021**
 
@@ -48,7 +48,7 @@ Here, I gained experience leading a small team of developers in an agile environ
 0 to 1 development. Additionally, I implemented DevOps solutions, automating order management processes to optimize efficiency and enhance business operations.
 
 
-## ‣ Fullstack Developer, [Treeseed.Org](https://www.treeseed.org/), Independent Startup
+## ‣ Fullstack Developer, [Treeseed](https://www.treeseed.org/), Independent Startup
 
 **Costa Rica ― 2016 - 2017**
 
