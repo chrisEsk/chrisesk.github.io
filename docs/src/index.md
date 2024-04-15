@@ -31,7 +31,7 @@ footer: "Last Modification: April 10th, 2024 | chrisesk.dev@gmail.com"
 
 ## Introduction
 
-As a pragmatic leader and BS in Software Engineering, I've gained diverse experience across consulting, development, teaching, QA, DevOps, entrepreneurship and project management.
+As a pragmatic leader and with a BS in Software Engineering, I've gained diverse experience across consulting, development, teaching, QA, DevOps, entrepreneurship and project management.
 
 I'm dedicated to continuous learning, exploring new technologies and embracing experimentation.
 
