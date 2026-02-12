@@ -17,6 +17,7 @@ cd src/.vuepress/dist
 git init
 git add -A
 git commit -m 'deploy'
+git branch -M master
 
 # if you are deploying to https://<USERNAME>.github.io
 git push -f git@github.com:chrisesk/chrisesk.github.io.git master
