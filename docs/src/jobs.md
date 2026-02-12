@@ -6,6 +6,12 @@ Due to privacy and confidenciality, this page has been trimmed of information. P
 <!-- https://time.graphics/editor/899573?position=2023%2012%208,96.9,99.67,YEAR_2;1.66125 -->
 <iframe width="100%" height="400" src="https://time.graphics/embed?v=1&id=899573" frameborder="0" allowfullscreen></iframe>
 
+## ‣ Founder, [record.beauty](https://record.beauty/)
+
+**Costa Rica ― November 2025 – Current**
+
+Created and deployed a social media platform and tool for documenting before & after transformations.
+
 ## ‣ Sr Adv Web UI, [Globant](https://globant.com/)
 
 **Costa Rica ― December 2021 – Current**
