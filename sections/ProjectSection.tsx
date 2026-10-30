@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { RoughNotation } from "react-rough-notation";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 import ProjectCard from "@/components/ProjectCard";
 import { useSection } from "context/section";
@@ -74,9 +75,15 @@ const projects = [
     title: "Adventure Time 8-bit",
     type: "Game",
     image: (
-      <div className="h-full flex items-center justify-center bg-[#B4BEE0] text-3xl font-semibold text-[#202b52]">Adventure Time 8-bit</div>
+      <Image
+        src="/adventure_time_8bit.png"
+        alt="Adventure Time 8-bit game"
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover"
+      />
     ),
-    desc: "An 8-bit game created as a university design patterns project. More details and a refreshed presentation are coming soon.",
+    desc: "An 8-bit game created as a university design patterns project in 2013.",
     tags: projectMetadata[1].tags,
     liveUrl: "https://www.newgrounds.com/portal/view/617935",
     codeUrl: "https://github.com/chrisEsk/dcce",

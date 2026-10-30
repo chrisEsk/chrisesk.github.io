@@ -9,7 +9,7 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
-import satNaing from "../public/satnaing.webp";
+import me from "../public/me.png";
 import AboutBgSvg from "@/components/AboutBgSvg";
 import EduGroup from "@/components/EduGroup";
 
@@ -119,9 +119,9 @@ const AboutSection: React.FC = () => {
               <h2 className="section-heading">Who am I?</h2>
             </RoughNotation>
           </div>
-          <div className="md:grid grid-rows-5 lg:grid-rows-6 grid-cols-5">
-            <div className="col-start-1 col-end-3 row-start-1 row-end-4 lg:row-end-7 lg:col-start-1 lg:col-end-3 flex justify-center items-center py-4 lg:mb-[20%]">
-              <div className="relative w-72">
+          <div className="grid gap-10 lg:grid-cols-[minmax(220px,280px)_1fr] lg:items-start lg:gap-x-16">
+            <div className="flex justify-center lg:justify-start">
+              <div className="profile-picture relative w-56 sm:w-64">
                 <svg
                   width="96"
                   height="21"
@@ -133,14 +133,14 @@ const AboutSection: React.FC = () => {
                   <path d="M79.2202 0.959991L62.7802 17.32L46.3301 0.959991L29.8902 17.32L13.4501 0.959991L0.410156 13.94L0.400146 17.58L13.4501 4.58999L29.8902 20.95L46.3301 4.58999L62.7802 20.95L79.2202 4.58999L93.7302 19.02L95.5402 17.19L79.2202 0.959991Z" />
                 </svg>
 
-                <div className="profile-picture overflow-hidden md:overflow-visible rounded-md md:shadow-2xl">
+                <div className="overflow-hidden rounded-full shadow-2xl">
                   <Image
-                    src={satNaing}
-                    width={1700}
-                    height={1790}
+                    src={me}
+                    width={180}
+                    height={180}
                     priority
                     alt="Christian Esquivel profile picture"
-                    className="rounded-md"
+                    className="aspect-square rounded-full object-cover"
                   />
                 </div>
 
@@ -168,23 +168,22 @@ const AboutSection: React.FC = () => {
               </div>
             </div>
 
-            <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
+            <div className="about-intro min-w-0">
+              <p>
               With 10+ years of comprehensive experience in the tech industry,
               I've gained diverse experience across consulting, development,
               teaching, QA, DevOps, entrepreneurship and project management. I'm
               dedicated to continuous learning, exploring new technologies and
               embracing experimentation; particularly with a focus on Frontend development.
               <br /><a className="link" href="/experience">Experience</a>
-            </p>
+              </p>
 
-            <div
-              className="col-start-3 col-end-6 row-start-1 row-end-6 lg:row-start-2 lg:row-end-7 md:ml-8 place-content-end"
-              ref={eduRef}
-            >
+              <div className="mt-8" ref={eduRef}>
               <p className="edu-bg my-4">Here is my educational background and Certifications.</p>
               {educationInfo.map((edu) => (
                 <EduGroup edu={edu} key={edu.id} />
               ))}
+              </div>
             </div>
           </div>
         </RoughNotationGroup>
@@ -224,6 +223,7 @@ const educationInfo = [
   {
     id: 1,
     title: "Bachelor's Degree in Software Engineering Development",
+    star: true,
     subTitle: "CENFOTEC University | 2011 ~ 2018",
     list: [
     ],
