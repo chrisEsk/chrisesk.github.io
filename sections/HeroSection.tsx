@@ -134,10 +134,10 @@ const HeroSection: React.FC = () => {
         </div>
         <div className="mt-2 my-4 md:mb-8">
           <p className="mb-2 text-xs">
-            Programmer, Entrepreneur, Philosopher, Teacher, Lifehacker... too many things ¯\_(ツ)_/¯
+            Programmer, entrepreneur, teacher, and lifelong learner.
           </p>
           <p>
-            With my expertise in Angular, Vue and React and NextJS on the frontend, and NodeJs,
+            With experience in Angular, Vue, React, and NextJS on the frontend, and NodeJs,
             C#, Java, and Python on the backend, I bring a unique
             combination of technical skills and creative problem-solving to
             every project I work on.

@@ -174,6 +174,7 @@ const AboutSection: React.FC = () => {
               teaching, QA, DevOps, entrepreneurship and project management. I'm
               dedicated to continuous learning, exploring new technologies and
               embracing experimentation; particularly with a focus on Frontend development.
+              <br /><a className="link" href="/experience">Experience</a>{" · "}<a className="link" href="/technologies">Technologies</a>
             </p>
 
             <div

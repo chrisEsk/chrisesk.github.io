@@ -46,7 +46,7 @@ const socialLinks = [
   {
     id: 1,
     title: "Christian Esquivel's Github Profile",
-    link: "https://github.com/satnaing",
+    link: "https://github.com/chrisEsk",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const socialLinks = [
   {
     id: 2,
     title: "Christian Esquivel's LinkedIn Profile",
-    link: "https://www.linkedin.com/in/satnaing/",
+    link: "https://www.linkedin.com/",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ const socialLinks = [
   {
     id: 3,
     title: "Check Christian Esquivel on Dev.to",
-    link: "https://dev.to/satnaing",
+    link: "https://dev.to/",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ const socialLinks = [
   {
     id: 4,
     title: "Christian Esquivel's Profile on Facebook",
-    link: "https://www.facebook.com/satnaing.dev",
+    link: "https://www.facebook.com/",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

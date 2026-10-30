@@ -47,16 +47,15 @@ const BlogHeroSection: React.FC = () => {
         </div>
         <div>
           <p className="intro-1 mt-4 mb-2">
-            Hello, everyone! Welcome to my personal blog.
+            Welcome to my personal blog.
           </p>
           <p className="intro-2">
-            In this blog, I will be writing about my projects (what I do/how I
-            did), my personal experiences, and some random stuffs.
+            I will be writing about projects, technology, and experiences as I continue learning and building.
           </p>
           <p className="intro-3">
-            You can follow me on my social media and{" "}
-            <a href="https://github.com/satnaing" className="link">
-              Github account.
+            You can follow my work on my{" "}
+            <a href="https://github.com/chrisEsk" className="link">
+              GitHub account.
             </a>
             <svg
               xmlns="http://www.w3.org/2000/svg"
