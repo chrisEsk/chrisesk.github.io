@@ -19,16 +19,16 @@ module.exports = {
     extend: {
       colors: {
         bglight: "#F9FAFB",
-        marrslight: "#1C9A9A",
-        marrsgreen: "#007A7A",
-        marrsdark: "#004D4D",
+        marrslight: "#6B9BFF",
+        marrsgreen: "#387BF8",
+        marrsdark: "#1E56B8",
         cardlight: "#EFF3F3",
 
         // bgdark: "#2D2D2D",
         bgdark: "#1D2A35",
-        carrilight: "#57DCB4",
-        carrigreen: "#05CE91",
-        carridark: "#00835B",
+        carrilight: "#78A8FF",
+        carrigreen: "#387BF8",
+        carridark: "#1E56B8",
         // carddark: "#383838",
         carddark: "#22323F",
         textlight: "#F9FAFB",

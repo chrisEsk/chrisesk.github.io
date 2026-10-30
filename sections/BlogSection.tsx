@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 import { RoughNotation } from "react-rough-notation";
 
 import { useSection } from "context/section";
@@ -23,8 +22,6 @@ type Props = {
 };
 
 const BlogSection: React.FC<Props> = ({ posts }) => {
-  const { theme } = useTheme();
-
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const elementRef = useRef<HTMLDivElement>(null);
@@ -44,7 +41,7 @@ const BlogSection: React.FC<Props> = ({ posts }) => {
           <RoughNotation
             type="underline"
             color={`${
-              theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"
+              "#387BF8"
             }`}
             strokeWidth={2}
             order={1}

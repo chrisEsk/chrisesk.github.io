@@ -48,7 +48,10 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 
     if (typeof data[field] !== "undefined") {
       if (field === "datetime") {
-        items[field] = '"' + data[field] + '"';
+        const datetime = data[field] instanceof Date
+          ? data[field].toISOString()
+          : String(data[field]);
+        items[field] = datetime;
       } else {
         items[field] = data[field];
       }

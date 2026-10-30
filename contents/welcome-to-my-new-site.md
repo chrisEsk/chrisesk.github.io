@@ -16,7 +16,6 @@ coverImageWidth: "559"
 coverImageHeight: "386"
 ogImage: /laptop-illustration.webp
 ogImageAlt: Laptop illustration
-language: English
 ---
 
 Welcome to my new site. I am migrating my portfolio to Next.js and will use this space to share projects, experiments, and lessons learned.

@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import LinkButton from "../components/LinkButton";
+import { CONTACT_EMAIL } from "utils/site";
 
 import satNaing from "../public/satnaing-illustration.webp";
 import laptop from "../public/laptop-illustration.webp";
@@ -143,7 +144,7 @@ const HeroSection: React.FC = () => {
             every project I work on.
           </p>
         </div>
-        <LinkButton href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
+        <LinkButton href={`mailto:${CONTACT_EMAIL}`}>
           Contact me!
         </LinkButton>
       </div>

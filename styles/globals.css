@@ -75,7 +75,7 @@
   @apply dark:bg-gray-200;
 }
 .dark .swiper-pagination-bullet-active {
-  background-color: rgb(5 206 145) !important;
+  background-color: #387BF8 !important;
 }
 .swiper-pagination-bullet-active {
   background-color: rgb(0 140 140) !important;

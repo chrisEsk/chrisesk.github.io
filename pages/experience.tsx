@@ -2,10 +2,11 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 import AppHead from "@/components/AppHead";
+import { CONTACT_EMAIL } from "utils/site";
 
 const roles = [
-  ["Founder", "TheSlider", "November 2025 – Current", "Created and deployed a social media platform for documenting before-and-after transformations.", undefined],
-  ["Sr Adv Web UI", "Globant", "December 2021 – Current", "Technical direction, application development, code reviews, task allocation, and troubleshooting.", "/logo_globant.png"],
+  ["Founder", "TheSlider", "November 2025 – Current", "Created and deployed a social media platform for documenting before-and-after transformations.", "/theslider_logo_transparent.png"],
+  ["Sr Adv Web UI", "Globant", "December 2021 – May 2026", "Technical direction, application development, code reviews, task allocation, and troubleshooting.", "/logo_globant.png"],
   ["Senior Consultant", "Gorilla Logic", "September 2019 – November 2021", "Collaborated with diverse clients across e-commerce and community platforms under agile methodologies.", "/logo_gl.png"],
   ["Tech Lead and Fullstack Engineer", "El Artesano App", "2017 – 2018", "Co-developed one of Costa Rica’s early social networks and led a small development team.", "/logo_artesano.png"],
   ["Software Architect and PO", "Miguitas Bakery", "2016", "Delivered a 0-to-1 product and automated order-management processes.", "/logo_miguitas.png"],
@@ -29,10 +30,7 @@ export default function Experience() {
         </button>
       </div>
       <h1 className="section-heading block">Experience</h1>
-      <p className="mb-8">Due to privacy and confidentiality, this page has been trimmed. Contact me for my full CV.</p>
-      <h2 className="text-2xl font-medium mb-4">Timeline</h2>
-      <iframe title="Christian Esquivel professional experience timeline" className="mb-12 w-full rounded-md" height="400" src="https://time.graphics/embed?v=1&id=899573" frameBorder="0" allowFullScreen />
-
+      <p className="mb-8">Due to privacy and confidentiality, this page has been trimmed. <a className="link" href={`mailto:${CONTACT_EMAIL}`}>Contact me for my full CV.</a></p>
       <div className="relative border-l-2 border-marrsgreen/40 pl-6 dark:border-carrigreen/40">
         {roles.map(([role, company, period, description, image]) => <article className="relative mb-10 rounded-md border border-marrsgreen/20 bg-white/40 p-5 shadow-sm dark:border-carrigreen/20 dark:bg-white/5" key={`${role}-${company}`}>
           <span className="absolute -left-[2.05rem] top-6 h-4 w-4 rounded-full border-4 border-bglight bg-marrsgreen dark:border-bgdark dark:bg-carrigreen" aria-hidden="true" />
@@ -47,6 +45,11 @@ export default function Experience() {
           <p className="mt-4">{description}</p>
         </article>)}
       </div>
+
+      <section className="mt-12">
+        <h2 className="text-2xl font-medium mb-4">Timeline</h2>
+        <iframe title="Christian Esquivel professional experience timeline" className="w-full rounded-md" height="400" src="https://time.graphics/embed?v=1&id=899573" frameBorder="0" allowFullScreen />
+      </section>
 
     </main>
   </>;

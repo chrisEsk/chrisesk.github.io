@@ -1,4 +1,5 @@
 import { useSection } from "context/section";
+import { CONTACT_EMAIL } from "utils/site";
 
 const SocialLinks: React.FC<{ page?: string }> = ({ page }) => {
   const { currentSection } = useSection();
@@ -25,10 +26,10 @@ const SocialLinks: React.FC<{ page?: string }> = ({ page }) => {
         <div className="hidden fixed left-10 bottom-0 md:flex flex-col w-6 h-56 items-center justify-between">
           <div className="-rotate-90 text-lg tracking-widest">
             <a
-              href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}
+              href={`mailto:${CONTACT_EMAIL}`}
               className="link-outline hover:text-marrsgreen dark:hover:text-carrigreen"
             >
-              {process.env.NEXT_PUBLIC_EMAIL}
+              {CONTACT_EMAIL}
             </a>
           </div>
           <div className="w-40 h-1 bg-bgdark dark:bg-bglight rotate-90"></div>
@@ -99,6 +100,10 @@ const navLinks = [
   {
     url: "#whoami",
     text: "Who am i?",
+  },
+  {
+    url: "#ai-expertise",
+    text: "AI Expertise",
   },
   {
     url: "#expertise",

@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
-import { useTheme } from "next-themes";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -88,8 +87,6 @@ const AboutSection: React.FC = () => {
     );
   }, []);
 
-  const { theme } = useTheme();
-
   const eduRef = useRef<HTMLDivElement>(null);
 
   // Set active link for about section
@@ -110,7 +107,7 @@ const AboutSection: React.FC = () => {
             <RoughNotation
               type="underline"
               color={`${
-                theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"
+                "#387BF8"
               }`}
               strokeWidth={2}
               order={1}
@@ -175,7 +172,7 @@ const AboutSection: React.FC = () => {
               teaching, QA, DevOps, entrepreneurship and project management. I'm
               dedicated to continuous learning, exploring new technologies and
               embracing experimentation; particularly with a focus on Frontend development.
-              <br /><a className="link" href="/experience">Experience</a>
+              <br /><a className="mt-5 inline-flex items-center gap-2 rounded-full bg-marrsgreen px-4 py-2 font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-marrsdark focus-visible:outline-2 dark:bg-carrigreen dark:text-bgdark dark:hover:bg-carridark" href="/experience">Experience <span aria-hidden="true">→</span></a>
               </p>
 
               <div className="mt-8" ref={eduRef}>
@@ -187,6 +184,50 @@ const AboutSection: React.FC = () => {
             </div>
           </div>
         </RoughNotationGroup>
+      </section>
+
+      <section id="ai-expertise" className="section relative overflow-hidden bg-[#eef4ff] dark:bg-[#111d2f]">
+        <div className="pointer-events-none absolute inset-0 opacity-70 [background-image:linear-gradient(rgba(56,123,248,.12)_1px,transparent_1px),linear-gradient(90deg,rgba(56,123,248,.12)_1px,transparent_1px)] [background-size:42px_42px]" />
+        <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#387BF8]/20 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-40 -left-32 h-96 w-96 rounded-full bg-[#7c3aed]/15 blur-3xl" />
+        <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-30" viewBox="0 0 900 700" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M40 160 C180 40 270 260 410 130 S660 70 850 210 M80 530 C230 390 310 610 500 450 S700 390 860 520" fill="none" stroke="#387BF8" strokeWidth="1" />
+          <circle cx="410" cy="130" r="6" fill="#387BF8" /><circle cx="500" cy="450" r="6" fill="#7c3aed" />
+        </svg>
+        <div className="relative z-10 mx-auto max-w-5xl">
+          <div className="text-center">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-marrsgreen dark:text-carrigreen">Human judgment · Machine leverage</p>
+            <h2 className="section-heading">AI Expertise</h2>
+            <p className="mx-auto mb-10 max-w-2xl text-lg font-medium text-marrsdark dark:text-carrilight">
+              Building the operating layer for agentic engineering.
+            </p>
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="rounded-2xl border border-white/70 bg-white/70 p-7 shadow-xl shadow-blue-900/10 backdrop-blur-md dark:border-white/10 dark:bg-[#1d2a35]/75">
+              <div className="mb-5 flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#387BF8] text-xl text-white">✦</span><h3 className="text-xl font-medium">Model orchestration</h3></div>
+              <p className="mt-3">
+                I connect the right model to the right moment. My practice spans
+                Claude, Codex, Gemini, Ollama, Kiro, and local open source models,
+                creating reliable workflows that turn diverse capabilities into
+                one focused engineering system.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-white/70 bg-white/70 p-7 shadow-xl shadow-blue-900/10 backdrop-blur-md dark:border-white/10 dark:bg-[#1d2a35]/75">
+              <div className="mb-5 flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#7c3aed] text-xl text-white">⌁</span><h3 className="text-xl font-medium">Agentic engineering</h3></div>
+              <p className="mt-3">
+                I design systems where agents can reason, collaborate, and act.
+                That includes RAG agents, MCP, parallel agent architectures,
+                context injection, and spec driven development, supported by
+                carefully prepared datasets and training examples.
+              </p>
+            </div>
+          </div>
+          <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-[#387BF8]/20 bg-[#387BF8]/10 p-6 text-center text-lg dark:bg-[#387BF8]/15">
+            I am an AI orchestrator for a new era of software development,
+            turning models, tools, and human expertise into practical systems
+            that think with teams, accelerate delivery, and create leverage.
+          </div>
+        </div>
       </section>
 
       <section id="expertise" className="section">

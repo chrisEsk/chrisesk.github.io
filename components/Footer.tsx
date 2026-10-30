@@ -19,7 +19,7 @@ const Footer: React.FC<Props> = ({ noPadding = false }) => {
           </a>
         ))}
       </div>
-      <div>
+      <div className="text-sm">
         Coded with <span className="sr-only">love</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +38,9 @@ const Footer: React.FC<Props> = ({ noPadding = false }) => {
         </svg>{" "}
         by Christian Esquivel
       </div>
+      <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+        Last Modified: October 30, 2026
+      </p>
     </footer>
   );
 };

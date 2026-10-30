@@ -12,12 +12,32 @@ type Props = {
     excerpt: string;
     datetime: string;
   };
+  compact?: boolean;
 };
 
-const BlogCard: React.FC<Props> = ({ post }) => {
+const BlogCard: React.FC<Props> = ({ post, compact = false }) => {
   const { title, slug, excerpt, datetime } = post;
 
   const sectionRef = useRef<HTMLLIElement>(null);
+
+  if (compact) {
+    return (
+      <li ref={sectionRef} className="my-3">
+        <Link
+          href={`/blog/posts/${slug}`}
+          className="group block rounded-md border border-marrsgreen/20 bg-cardlight p-4 transition hover:-translate-y-0.5 hover:border-marrsgreen dark:border-carrigreen/20 dark:bg-carddark dark:hover:border-carrigreen"
+        >
+          <div className="flex items-center justify-between gap-3 text-lg font-medium group-hover:text-marrsgreen dark:group-hover:text-carrigreen">
+            <span>{title}</span>
+            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+          </div>
+          <div className="mt-2 flex items-center text-sm italic text-carddark dark:text-gray-300">
+            <DateTime datetime={datetime} />
+          </div>
+        </Link>
+      </li>
+    );
+  }
 
   // Animations
   // useEffect(() => {
@@ -55,7 +75,7 @@ const BlogCard: React.FC<Props> = ({ post }) => {
 
   return (
     <li ref={sectionRef} className="my-4 md:mt-0 md:mb-8">
-      <div className="overflow-hidden">
+      <div className="overflow-hidden rounded-md border border-transparent p-2 transition hover:border-marrsgreen/30 hover:bg-cardlight dark:hover:border-carrigreen/30 dark:hover:bg-carddark">
         <Link
           href={`/blog/posts/${slug}`}
           className="blog-title link inline-block outline-none dark:outline-none focus-within:underline"
@@ -83,7 +103,7 @@ const BlogCard: React.FC<Props> = ({ post }) => {
           <DateTime datetime={datetime} />
         </div>
       </div>
-      <p className="blog-excerpt dark:text-gray-300">{excerpt}</p>
+      {!compact && <p className="blog-excerpt dark:text-gray-300">{excerpt}</p>}
     </li>
   );
 };

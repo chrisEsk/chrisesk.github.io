@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { RoughNotation } from "react-rough-notation";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 
 import ProjectCard from "@/components/ProjectCard";
@@ -11,8 +10,6 @@ import { projects as projectMetadata } from "utils/projects";
 
 
 const ProjectSection: React.FC = () => {
-  const { theme } = useTheme();
-
   const sectionRef = useRef<HTMLDivElement>(null);
 
   const elementRef = useRef<HTMLDivElement>(null);
@@ -30,7 +27,7 @@ const ProjectSection: React.FC = () => {
       <div className="project-title text-center">
         <RoughNotation
           type="underline"
-          color={`${theme === "light" ? "rgb(0, 122, 122)" : "rgb(5 206 145)"}`}
+          color="#387BF8"
           strokeWidth={2}
           order={1}
           show={isOnScreen}
@@ -64,7 +61,13 @@ const projects = [
     title: "TheSlider",
     type: "Product",
     image: (
-      <div className="h-full flex items-center justify-center bg-[#A6CECE] text-3xl font-semibold text-[#123b3b]">TheSlider</div>
+      <Image
+        src="/logo_theslider.png"
+        alt="TheSlider logo"
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover"
+      />
     ),
     desc: "A social media platform for documenting before-and-after transformations, created and deployed by Christian Esquivel.",
     tags: projectMetadata[0].tags,
