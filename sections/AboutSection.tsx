@@ -174,7 +174,7 @@ const AboutSection: React.FC = () => {
               teaching, QA, DevOps, entrepreneurship and project management. I'm
               dedicated to continuous learning, exploring new technologies and
               embracing experimentation; particularly with a focus on Frontend development.
-              <br /><a className="link" href="/experience">Experience</a>{" · "}<a className="link" href="/technologies">Technologies</a>
+              <br /><a className="link" href="/experience">Experience</a>
             </p>
 
             <div
@@ -190,10 +190,35 @@ const AboutSection: React.FC = () => {
         </RoughNotationGroup>
       </section>
 
+      <section id="expertise" className="section">
+        <div className="text-center">
+          <h2 className="section-heading">Expertise</h2>
+          <p className="mb-8">Technologies grouped by my level of experience.</p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {expertiseLevels.map(({ level, technologies }) => (
+            <section className="rounded-md border border-marrsgreen/30 p-5" key={level}>
+              <h3 className="text-xl font-medium text-marrsgreen dark:text-carrigreen">{level}</h3>
+              <ul className="mt-3 list-disc pl-5">
+                {technologies.map((technology) => <li key={technology}>{technology}</li>)}
+              </ul>
+            </section>
+          ))}
+        </div>
+      </section>
+
       <AboutBgSvg />
     </div>
   );
 };
+
+const expertiseLevels = [
+  { level: "★★★★★ · SME", technologies: ["Angular + TypeScript", "Ionic", "RxJS", "HTML + JS + SCSS", "Parse Platform", "Back4App"] },
+  { level: "★★★★☆ · Expert", technologies: ["Capacitor", "Bootstrap, Material, Foundation, Tailwind", "Node.js", "Heroku", "MySQL, PostgreSQL", "Jasmine, Karma, Cypress, Jest, Mocha, Chai", "Cloudinary", "Figma", "Chromecast SDK"] },
+  { level: "★★★☆☆ · Advanced", technologies: ["React, Vue, Svelte", "Nx", "AWS", "C#", "Java", "Windows Server", "ActionScript", "GitHub Actions", "GIMP"] },
+  { level: "★★☆☆☆ · Basic", technologies: ["MongoDB", "Python", "Google Ads Manager", "Jenkins", "Travis", "Handlebars"] },
+  { level: "★☆☆☆☆ · Beginner", technologies: ["Supabase", "Oracle Commerce Platform", "Cheetahmail"] },
+];
 
 const educationInfo = [
   {
