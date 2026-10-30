@@ -1,1 +1,24 @@
+# Dependencies & Build Output
 node_modules
+.next
+out
+build
+dist
+
+# Environment Files (Crucial for security)
+.env
+.env*.local
+
+# Debug logs & Cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store
+.turbo
+
+# Editor / OS-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
