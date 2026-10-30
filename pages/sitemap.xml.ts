@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next";
 import { getAllPosts } from "utils/api";
 import slugify from "utils/slugify";
+import { getProjectTags } from "utils/projects";
 
 type Data = {
   slugs: (string | string[])[];
@@ -21,7 +22,7 @@ const generateSiteMap = ({ slugs, categories, tags }: Data) => {
         <loc>${process.env.NEXT_PUBLIC_URL}/blog/categories</loc>
       </url>
       <url>
-        <loc>${process.env.NEXT_PUBLIC_URL}/blog/tags</loc>
+        <loc>${process.env.NEXT_PUBLIC_URL}/tags</loc>
       </url>
       ${categories
         .map((category) => {
@@ -36,7 +37,7 @@ const generateSiteMap = ({ slugs, categories, tags }: Data) => {
         .map((tag) => {
           return `
         <url>
-        <loc>${process.env.NEXT_PUBLIC_URL}/blog/tags/${tag}</loc>
+        <loc>${process.env.NEXT_PUBLIC_URL}/tags/${slugify(tag)}</loc>
         </url>
       `;
         })
@@ -74,6 +75,7 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     if (post.tags) tags.push(...(post.tags as string[]));
   }
   tags = tags.filter((x, i, a) => a.indexOf(x) == i);
+  tags = Array.from(new Set([...tags, ...getProjectTags()]));
 
   // Generate encoded slugs and store it in array
   const slugs = posts.map((post) =>

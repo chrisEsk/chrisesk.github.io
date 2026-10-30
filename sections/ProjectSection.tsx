@@ -6,6 +6,7 @@ import ProjectCard from "@/components/ProjectCard";
 import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
+import { projects as projectMetadata } from "utils/projects";
 
 
 const ProjectSection: React.FC = () => {
@@ -65,11 +66,9 @@ const projects = [
       <div className="h-full flex items-center justify-center bg-[#A6CECE] text-3xl font-semibold text-[#123b3b]">TheSlider</div>
     ),
     desc: "A social media platform for documenting before-and-after transformations, created and deployed by Christian Esquivel.",
-    tags: ["Product Development", "Web Platform"],
+    tags: projectMetadata[0].tags,
     liveUrl: "https://theslider.app/",
-    codeUrl: "https://github.com/chrisEsk",
     bgColor: "bg-[#A6CECE]",
-    githubApi: "https://api.github.com/repos/chrisEsk/chrisEsk.github.io",
   },
   {
     title: "Adventure Time 8-bit",
@@ -78,11 +77,10 @@ const projects = [
       <div className="h-full flex items-center justify-center bg-[#B4BEE0] text-3xl font-semibold text-[#202b52]">Adventure Time 8-bit</div>
     ),
     desc: "An 8-bit game created as a university design patterns project. More details and a refreshed presentation are coming soon.",
-    tags: ["ActionScript", "Design Patterns", "8-bit"],
+    tags: projectMetadata[1].tags,
     liveUrl: "https://www.newgrounds.com/portal/view/617935",
     codeUrl: "https://github.com/chrisEsk/dcce",
     bgColor: "bg-[#B4BEE0]",
-    githubApi: "https://api.github.com/repos/chrisEsk/dcce",
   },
 ];
 

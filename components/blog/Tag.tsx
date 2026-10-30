@@ -1,4 +1,5 @@
 import Link from "next/link";
+import slugify from "utils/slugify";
 
 type Props = {
   tag: string;
@@ -9,7 +10,7 @@ type Props = {
 const Tag: React.FC<Props> = ({ tag, size = "sm", count }) => {
   return (
     <Link
-      href={`/blog/tags/${tag}`}
+      href={`/tags/${slugify(tag)}`}
       key={tag}
       passHref
       className={`blog-tag link-outline group whitespace-nowrap dark:fill-bglight hover:bg-marrsgreen hover:text-bglight hover:fill-bglight dark:hover:bg-carrigreen dark:hover:text-bgdark dark:hover:fill-bgdark ${

@@ -130,7 +130,7 @@ const navLinks = [
     text: "Categories",
   },
   {
-    url: "/blog/tags",
+    url: "/tags",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
