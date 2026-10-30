@@ -75,7 +75,7 @@ const BlogCard: React.FC<Props> = ({ post, compact = false }) => {
 
   return (
     <li ref={sectionRef} className="my-4 md:mt-0 md:mb-8">
-      <div className="overflow-hidden rounded-md border border-transparent p-2 transition hover:border-marrsgreen/30 hover:bg-cardlight dark:hover:border-carrigreen/30 dark:hover:bg-carddark">
+      <div className="overflow-hidden">
         <Link
           href={`/blog/posts/${slug}`}
           className="blog-title link inline-block outline-none dark:outline-none focus-within:underline"

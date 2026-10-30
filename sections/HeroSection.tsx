@@ -133,6 +133,9 @@ const HeroSection: React.FC = () => {
             A Software Engineer,
           </span>
         </div>
+        <p className="text-sm font-medium text-marrsdark dark:text-carrilight">
+          Based in San José, Costa Rica
+        </p>
         <div className="mt-2 my-4 md:mb-8">
           <p className="mb-2 text-xs">
             Programmer, entrepreneur, teacher, and lifelong learner.

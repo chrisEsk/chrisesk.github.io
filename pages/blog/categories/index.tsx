@@ -9,7 +9,6 @@ import SocialLinks from "@/components/SocialLinks";
 import BlogHeader from "@/components/blog/BlogHeader";
 import BlogCardBox from "@/components/BlogCardBox";
 import Footer from "@/components/Footer";
-import Loader from "@/components/Loader";
 import { getAllPosts } from "utils/api";
 import slugify from "utils/slugify";
 import { MdxMeta } from "../posts/[slug]";
@@ -64,7 +63,6 @@ const Blog: NextPage<Props> = ({ categories, categorizedPosts }) => {
   return (
     <>
       <AppHead title="Blog - Christian Esquivel" />
-      <Loader>Categories</Loader>
       <div ref={sectionRef} className="bg-bglight dark:bg-bgdark">
         <div className="selection:bg-marrsgreen selection:text-bglight dark:selection:bg-carrigreen dark:selection:text-bgdark">
           <SkipToMain />

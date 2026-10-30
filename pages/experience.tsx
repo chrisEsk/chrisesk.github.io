@@ -5,7 +5,7 @@ import AppHead from "@/components/AppHead";
 import { CONTACT_EMAIL } from "utils/site";
 
 const roles = [
-  ["Founder", "TheSlider", "November 2025 – Current", "Created and deployed a social media platform for documenting before-and-after transformations.", "/theslider_logo_transparent.png"],
+  ["Founder", "TheSlider", "November 2025 – Current", "Created and deployed TheSlider, a social media platform and image comparison tool for documenting before-and-after transformations.", "/theslider_logo_transparent.png"],
   ["Sr Adv Web UI", "Globant", "December 2021 – May 2026", "Technical direction, application development, code reviews, task allocation, and troubleshooting.", "/logo_globant.png"],
   ["Senior Consultant", "Gorilla Logic", "September 2019 – November 2021", "Collaborated with diverse clients across e-commerce and community platforms under agile methodologies.", "/logo_gl.png"],
   ["Tech Lead and Fullstack Engineer", "El Artesano App", "2017 – 2018", "Co-developed one of Costa Rica’s early social networks and led a small development team.", "/logo_artesano.png"],
