@@ -47,9 +47,7 @@ const ContactSection: React.FC = () => {
           challenges. If you have opportunities for collaboration or want to
           build something amazing, don't hesitate to contact me!
         </p>
-        <LinkButton href={`mailto:${CONTACT_EMAIL}`}>
-          Get in touch!
-        </LinkButton>
+        <LinkButton href={`mailto:${CONTACT_EMAIL}`}>Get in touch!</LinkButton>
       </div>
     </section>
   );

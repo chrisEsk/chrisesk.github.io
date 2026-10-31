@@ -71,11 +71,110 @@
   }
 }
 
+.hero-interface {
+  min-height: min(900px, 100vh);
+}
+.hero-canvas,
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-canvas {
+  opacity: 0.8;
+}
+.hero-grid {
+  opacity: 0.45;
+  background-image: linear-gradient(
+      rgba(56, 123, 248, 0.16) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(56, 123, 248, 0.16) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, black, transparent 90%);
+}
+.dark .hero-canvas {
+  opacity: 0.9;
+}
+.dark .hero-grid {
+  background-image: linear-gradient(
+      rgba(120, 168, 255, 0.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(120, 168, 255, 0.08) 1px, transparent 1px);
+}
+.hero-glow {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+  pointer-events: none;
+}
+.hero-glow-one {
+  width: 30rem;
+  height: 30rem;
+  right: 5%;
+  top: 4%;
+  background: rgba(56, 123, 248, 0.16);
+}
+.hero-glow-two {
+  width: 18rem;
+  height: 18rem;
+  left: 20%;
+  bottom: 3%;
+  background: rgba(103, 232, 249, 0.09);
+}
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  border-radius: 9999px;
+  padding: 0.9rem 1.3rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.hero-cta:hover {
+  transform: translateY(-2px);
+}
+.hero-text-link {
+  color: rgba(219, 234, 254, 0.75);
+  font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.hero-text-link:hover {
+  color: white;
+}
+.hero-orbit-label {
+  z-index: 11;
+  color: rgba(191, 219, 254, 0.7);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+.hero-orbit-label span {
+  color: rgba(103, 232, 249, 0.85);
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-orbit [class*="animation"] {
+    animation: none;
+  }
+}
+
 .swiper-pagination-bullet {
   @apply dark:bg-gray-200;
 }
 .dark .swiper-pagination-bullet-active {
-  background-color: #387BF8 !important;
+  background-color: #387bf8 !important;
 }
 .swiper-pagination-bullet-active {
   background-color: rgb(0 140 140) !important;

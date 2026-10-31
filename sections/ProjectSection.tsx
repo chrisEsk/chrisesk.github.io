@@ -8,7 +8,6 @@ import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 import { projects as projectMetadata } from "utils/projects";
 
-
 const ProjectSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 

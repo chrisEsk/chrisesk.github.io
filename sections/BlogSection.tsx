@@ -40,9 +40,7 @@ const BlogSection: React.FC<Props> = ({ posts }) => {
         <div className="text-center">
           <RoughNotation
             type="underline"
-            color={`${
-              "#387BF8"
-            }`}
+            color={`${"#387BF8"}`}
             strokeWidth={2}
             order={1}
             show={isOnScreen}

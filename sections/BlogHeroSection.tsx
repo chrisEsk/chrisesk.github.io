@@ -46,11 +46,10 @@ const BlogHeroSection: React.FC = () => {
           </h1>
         </div>
         <div>
-          <p className="intro-1 mt-4 mb-2">
-            Welcome to my personal blog.
-          </p>
+          <p className="intro-1 mt-4 mb-2">Welcome to my personal blog.</p>
           <p className="intro-2">
-            I will be writing about projects, technology, and experiences as I continue learning and building.
+            I will be writing about projects, technology, and experiences as I
+            continue learning and building.
           </p>
           <p className="intro-3">
             You can follow my work on my{" "}

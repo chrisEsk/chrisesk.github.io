@@ -59,7 +59,11 @@ const EduGroup: React.FC<Props> = ({ edu }) => {
         <h3
           className={`edu-heading text-marrsgreen dark:text-carrigreen text-lg font-medium`}
         >
-          {edu.star && <span className="text-yellow-400" aria-label="Featured education">★ </span>}
+          {edu.star && (
+            <span className="text-yellow-400" aria-label="Featured education">
+              ★{" "}
+            </span>
+          )}
           {edu.title}
         </h3>
       </div>

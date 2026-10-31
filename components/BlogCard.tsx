@@ -29,7 +29,12 @@ const BlogCard: React.FC<Props> = ({ post, compact = false }) => {
         >
           <div className="flex items-center justify-between gap-3 text-lg font-medium group-hover:text-marrsgreen dark:group-hover:text-carrigreen">
             <span>{title}</span>
-            <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">→</span>
+            <span
+              aria-hidden="true"
+              className="transition-transform group-hover:translate-x-1"
+            >
+              →
+            </span>
           </div>
           <div className="mt-2 flex items-center text-sm italic text-carddark dark:text-gray-300">
             <DateTime datetime={datetime} />

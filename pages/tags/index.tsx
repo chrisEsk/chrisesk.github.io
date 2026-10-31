@@ -8,9 +8,19 @@ import SocialLinks from "@/components/SocialLinks";
 import { getAllPosts } from "utils/api";
 import { getProjectTags } from "utils/projects";
 
-type Props = { blogTags: string[]; projectTags: string[]; blogCounts: Record<string, number>; projectCounts: Record<string, number> };
+type Props = {
+  blogTags: string[];
+  projectTags: string[];
+  blogCounts: Record<string, number>;
+  projectCounts: Record<string, number>;
+};
 
-const Tags: NextPage<Props> = ({ blogTags, projectTags, blogCounts, projectCounts }) => (
+const Tags: NextPage<Props> = ({
+  blogTags,
+  projectTags,
+  blogCounts,
+  projectCounts,
+}) => (
   <>
     <AppHead title="Tags - Christian Esquivel" />
     <div className="bg-bglight dark:bg-bgdark min-h-screen">
@@ -22,11 +32,19 @@ const Tags: NextPage<Props> = ({ blogTags, projectTags, blogCounts, projectCount
           <h1 className="text-3xl lg:text-4xl font-bold mb-8">Tags</h1>
           <h2 className="text-2xl font-medium mb-3">Project tags</h2>
           <ul className="mb-10">
-            {projectTags.map((tag) => <li className="inline-block" key={tag}><Tag tag={tag} size="lg" count={projectCounts[tag]} /></li>)}
+            {projectTags.map((tag) => (
+              <li className="inline-block" key={tag}>
+                <Tag tag={tag} size="lg" count={projectCounts[tag]} />
+              </li>
+            ))}
           </ul>
           <h2 className="text-2xl font-medium mb-3">Blog tags</h2>
           <ul>
-            {blogTags.map((tag) => <li className="inline-block" key={tag}><Tag tag={tag} size="lg" count={blogCounts[tag]} /></li>)}
+            {blogTags.map((tag) => (
+              <li className="inline-block" key={tag}>
+                <Tag tag={tag} size="lg" count={blogCounts[tag]} />
+              </li>
+            ))}
           </ul>
         </section>
       </main>
@@ -37,9 +55,17 @@ const Tags: NextPage<Props> = ({ blogTags, projectTags, blogCounts, projectCount
 
 export const getStaticProps: GetStaticProps = async () => {
   const posts = getAllPosts(["tags"]);
-  const blogTags = Array.from(new Set(posts.flatMap((post) => (post.tags as string[] | undefined) || []))).sort();
+  const blogTags = Array.from(
+    new Set(posts.flatMap((post) => (post.tags as string[] | undefined) || []))
+  ).sort();
   const projectTags = getProjectTags().sort();
-  const blogCounts = Object.fromEntries(blogTags.map((tag) => [tag, posts.filter((post) => (post.tags as string[] | undefined)?.includes(tag)).length]));
+  const blogCounts = Object.fromEntries(
+    blogTags.map((tag) => [
+      tag,
+      posts.filter((post) => (post.tags as string[] | undefined)?.includes(tag))
+        .length,
+    ])
+  );
   const projectCounts = Object.fromEntries(projectTags.map((tag) => [tag, 1]));
   return { props: { blogTags, projectTags, blogCounts, projectCounts } };
 };

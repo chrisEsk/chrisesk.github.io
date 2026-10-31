@@ -56,6 +56,68 @@ const AboutSection: React.FC = () => {
     // edu-bg
     gsap.fromTo(q(".edu-bg"), fromAnimation, toAnimation("edu-bg"));
 
+    // AI expertise: layered reveal with a subtle tilt and staggered cards.
+    gsap.fromTo(
+      q(".ai-heading"),
+      { y: 45, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: { trigger: q(".ai-heading"), start: "top 82%" },
+      }
+    );
+    gsap.fromTo(
+      q(".ai-card"),
+      { y: 80, opacity: 0, rotateY: 8 },
+      {
+        y: 0,
+        opacity: 1,
+        rotateY: 0,
+        duration: 0.9,
+        stagger: 0.18,
+        ease: "power3.out",
+        scrollTrigger: { trigger: q(".ai-card"), start: "top 82%" },
+      }
+    );
+    gsap.fromTo(
+      q(".ai-callout"),
+      { y: 35, opacity: 0, scale: 0.96 },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.8,
+        ease: "back.out(1.4)",
+        scrollTrigger: { trigger: q(".ai-callout"), start: "top 88%" },
+      }
+    );
+    gsap.fromTo(
+      q(".expertise-heading"),
+      { y: 40, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.75,
+        ease: "power3.out",
+        scrollTrigger: { trigger: q(".expertise-heading"), start: "top 84%" },
+      }
+    );
+    gsap.fromTo(
+      q(".expertise-card"),
+      { y: 65, opacity: 0, scale: 0.96 },
+      {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        duration: 0.7,
+        stagger: 0.12,
+        ease: "power3.out",
+        scrollTrigger: { trigger: q(".expertise-card"), start: "top 86%" },
+      }
+    );
+
     // bg svg parallax effect
     gsap.fromTo(
       q(".bg-svg"),
@@ -100,9 +162,7 @@ const AboutSection: React.FC = () => {
           <div className="text-center">
             <RoughNotation
               type="underline"
-              color={`${
-                "#387BF8"
-              }`}
+              color={`${"#387BF8"}`}
               strokeWidth={2}
               order={1}
               show={isSecOnScreen}
@@ -161,53 +221,96 @@ const AboutSection: React.FC = () => {
 
             <div className="about-intro min-w-0">
               <p>
-              With 10+ years of comprehensive experience in the tech industry,
-              I've gained diverse experience across consulting, development,
-              teaching, QA, DevOps, entrepreneurship and project management. I'm
-              dedicated to continuous learning, exploring new technologies and
-              embracing experimentation; particularly with a focus on Frontend development.
-              <br /><a className="mt-5 inline-flex items-center gap-2 rounded-full bg-marrsgreen px-4 py-2 font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-marrsdark focus-visible:outline-2 dark:bg-carrigreen dark:text-bgdark dark:hover:bg-carridark" href="/experience">Experience <span aria-hidden="true">→</span></a>
+                With 10+ years of comprehensive experience in the tech industry,
+                I've gained diverse experience across consulting, development,
+                teaching, QA, DevOps, entrepreneurship and project management.
+                I'm dedicated to continuous learning, exploring new technologies
+                and embracing experimentation; particularly with a focus on
+                Frontend development.
+                <br />
+                <a
+                  className="mt-5 inline-flex items-center gap-2 rounded-full bg-marrsgreen px-4 py-2 font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-marrsdark focus-visible:outline-2 dark:bg-carrigreen dark:text-bgdark dark:hover:bg-carridark"
+                  href="/experience"
+                >
+                  Experience{" "}
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    className="h-4 w-4 shrink-0 fill-current"
+                  >
+                    <path d="M2 7.25h8.2L7 4.05 8.05 3l5 5-5 5L7 11.95l3.2-3.2H2z" />
+                  </svg>
+                </a>
               </p>
 
               <div className="mt-8" ref={eduRef}>
-              <p className="edu-bg my-4">Here is my educational background and Certifications.</p>
-              {educationInfo.map((edu) => (
-                <EduGroup edu={edu} key={edu.id} />
-              ))}
+                <p className="edu-bg my-4">
+                  Here is my educational background and Certifications.
+                </p>
+                {educationInfo.map((edu) => (
+                  <EduGroup edu={edu} key={edu.id} />
+                ))}
               </div>
             </div>
           </div>
         </RoughNotationGroup>
       </section>
 
-      <section ref={aiExpertiseRef} id="ai-expertise" className="section relative overflow-hidden bg-[#eef4ff] dark:bg-[#111d2f]">
+      <section
+        ref={aiExpertiseRef}
+        id="ai-expertise"
+        className="section relative overflow-hidden bg-[#eef4ff] dark:bg-[#111d2f]"
+      >
         <div className="pointer-events-none absolute inset-0 opacity-70 [background-image:linear-gradient(rgba(56,123,248,.12)_1px,transparent_1px),linear-gradient(90deg,rgba(56,123,248,.12)_1px,transparent_1px)] [background-size:42px_42px]" />
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#387BF8]/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-40 -left-32 h-96 w-96 rounded-full bg-[#7c3aed]/15 blur-3xl" />
-        <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-30" viewBox="0 0 900 700" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M40 160 C180 40 270 260 410 130 S660 70 850 210 M80 530 C230 390 310 610 500 450 S700 390 860 520" fill="none" stroke="#387BF8" strokeWidth="1" />
-          <circle cx="410" cy="130" r="6" fill="#387BF8" /><circle cx="500" cy="450" r="6" fill="#7c3aed" />
+        <svg
+          className="pointer-events-none absolute inset-0 h-full w-full opacity-30"
+          viewBox="0 0 900 700"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            d="M40 160 C180 40 270 260 410 130 S660 70 850 210 M80 530 C230 390 310 610 500 450 S700 390 860 520"
+            fill="none"
+            stroke="#387BF8"
+            strokeWidth="1"
+          />
+          <circle cx="410" cy="130" r="6" fill="#387BF8" />
+          <circle cx="500" cy="450" r="6" fill="#7c3aed" />
         </svg>
         <div className="relative z-10 mx-auto max-w-5xl">
           <div className="text-center">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-marrsgreen dark:text-carrigreen">Human judgment · Machine leverage</p>
-            <h2 className="section-heading">AI Expertise</h2>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-marrsgreen dark:text-carrigreen">
+              Human judgment · Machine leverage
+            </p>
+            <h2 className="section-heading ai-heading">AI Expertise</h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg font-medium text-marrsdark dark:text-carrilight">
               Building the operating layer for agentic engineering.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-white/70 bg-white/70 p-7 shadow-xl shadow-blue-900/10 backdrop-blur-md dark:border-white/10 dark:bg-[#1d2a35]/75">
-              <div className="mb-5 flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#387BF8] text-xl text-white">✦</span><h3 className="text-xl font-medium">Model orchestration</h3></div>
+            <div className="ai-card rounded-2xl border border-white/70 bg-white/70 p-7 shadow-xl shadow-blue-900/10 backdrop-blur-md dark:border-white/10 dark:bg-[#1d2a35]/75">
+              <div className="mb-5 flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#387BF8] text-xl text-white">
+                  ✦
+                </span>
+                <h3 className="text-xl font-medium">Model orchestration</h3>
+              </div>
               <p className="mt-3">
                 I connect the right model to the right moment. My practice spans
-                Claude, Codex, Gemini, Ollama, Kiro, and local open source models,
-                creating reliable workflows that turn diverse capabilities into
-                one focused engineering system.
+                Claude, Codex, Gemini, Ollama, Kiro, and local open source
+                models, creating reliable workflows that turn diverse
+                capabilities into one focused engineering system.
               </p>
             </div>
-            <div className="rounded-2xl border border-white/70 bg-white/70 p-7 shadow-xl shadow-blue-900/10 backdrop-blur-md dark:border-white/10 dark:bg-[#1d2a35]/75">
-              <div className="mb-5 flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#7c3aed] text-xl text-white">⌁</span><h3 className="text-xl font-medium">Agentic engineering</h3></div>
+            <div className="ai-card rounded-2xl border border-white/70 bg-white/70 p-7 shadow-xl shadow-blue-900/10 backdrop-blur-md dark:border-white/10 dark:bg-[#1d2a35]/75">
+              <div className="mb-5 flex items-center gap-3">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#7c3aed] text-xl text-white">
+                  ⌁
+                </span>
+                <h3 className="text-xl font-medium">Agentic engineering</h3>
+              </div>
               <p className="mt-3">
                 I design systems where agents can reason, collaborate, and act.
                 That includes RAG agents, MCP, parallel agent architectures,
@@ -216,7 +319,7 @@ const AboutSection: React.FC = () => {
               </p>
             </div>
           </div>
-          <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-[#387BF8]/20 bg-[#387BF8]/10 p-6 text-center text-lg dark:bg-[#387BF8]/15">
+          <div className="ai-callout mx-auto mt-8 max-w-3xl rounded-2xl border border-[#387BF8]/20 bg-[#387BF8]/10 p-6 text-center text-lg dark:bg-[#387BF8]/15">
             I am an AI orchestrator for a new era of software development,
             turning models, tools, and human expertise into practical systems
             that think with teams, accelerate delivery, and create leverage.
@@ -226,15 +329,24 @@ const AboutSection: React.FC = () => {
 
       <section ref={expertiseRef} id="expertise" className="section">
         <div className="text-center">
-          <h2 className="section-heading">Expertise</h2>
-          <p className="mb-8">Technologies grouped by my level of experience.</p>
+          <h2 className="section-heading expertise-heading">Expertise</h2>
+          <p className="mb-8">
+            Technologies grouped by my level of experience.
+          </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {expertiseLevels.map(({ level, technologies }) => (
-            <section className="rounded-md border border-marrsgreen/30 p-5" key={level}>
-              <h3 className="text-xl font-medium text-marrsgreen dark:text-carrigreen">{level}</h3>
+            <section
+              className="expertise-card rounded-md border border-marrsgreen/30 p-5"
+              key={level}
+            >
+              <h3 className="text-xl font-medium text-marrsgreen dark:text-carrigreen">
+                {level}
+              </h3>
               <ul className="mt-3 list-disc pl-5">
-                {technologies.map((technology) => <li key={technology}>{technology}</li>)}
+                {technologies.map((technology) => (
+                  <li key={technology}>{technology}</li>
+                ))}
               </ul>
             </section>
           ))}
@@ -247,11 +359,60 @@ const AboutSection: React.FC = () => {
 };
 
 const expertiseLevels = [
-  { level: "★★★★★ · SME", technologies: ["Angular + TypeScript", "Ionic", "RxJS", "HTML + JS + SCSS", "Parse Platform", "Back4App"] },
-  { level: "★★★★☆ · Expert", technologies: ["Capacitor", "Bootstrap, Material, Foundation, Tailwind", "Node.js", "Heroku", "MySQL, PostgreSQL", "Jasmine, Karma, Cypress, Jest, Mocha, Chai", "Cloudinary", "Figma", "Chromecast SDK"] },
-  { level: "★★★☆☆ · Advanced", technologies: ["React, Vue, Svelte", "Nx", "AWS", "C#", "Java", "Windows Server", "ActionScript", "GitHub Actions", "GIMP"] },
-  { level: "★★☆☆☆ · Basic", technologies: ["MongoDB", "Python", "Google Ads Manager", "Jenkins", "Travis", "Handlebars"] },
-  { level: "★☆☆☆☆ · Beginner", technologies: ["Supabase", "Oracle Commerce Platform", "Cheetahmail"] },
+  {
+    level: "★★★★★ · SME",
+    technologies: [
+      "Angular + TypeScript",
+      "Ionic",
+      "RxJS",
+      "HTML + JS + SCSS",
+      "Parse Platform",
+      "Back4App",
+    ],
+  },
+  {
+    level: "★★★★☆ · Expert",
+    technologies: [
+      "Capacitor",
+      "Bootstrap, Material, Foundation, Tailwind",
+      "Node.js",
+      "Heroku",
+      "MySQL, PostgreSQL",
+      "Jasmine, Karma, Cypress, Jest, Mocha, Chai",
+      "Cloudinary",
+      "Figma",
+      "Chromecast SDK",
+    ],
+  },
+  {
+    level: "★★★☆☆ · Advanced",
+    technologies: [
+      "React, Vue, Svelte",
+      "Nx",
+      "AWS",
+      "C#",
+      "Java",
+      "Windows Server",
+      "ActionScript",
+      "GitHub Actions",
+      "GIMP",
+    ],
+  },
+  {
+    level: "★★☆☆☆ · Basic",
+    technologies: [
+      "MongoDB",
+      "Python",
+      "Google Ads Manager",
+      "Jenkins",
+      "Travis",
+      "Handlebars",
+    ],
+  },
+  {
+    level: "★☆☆☆☆ · Beginner",
+    technologies: ["Supabase", "Oracle Commerce Platform", "Cheetahmail"],
+  },
 ];
 
 const educationInfo = [
@@ -260,36 +421,31 @@ const educationInfo = [
     title: "Bachelor's Degree in Software Engineering Development",
     star: true,
     subTitle: "CENFOTEC University | 2011 ~ 2018",
-    list: [
-    ],
+    list: [],
   },
   {
     id: 2,
     title: "High School Bachelor's Degree",
     subTitle: "Kamuk School | 2011",
-    list: [
-    ],
+    list: [],
   },
   {
     id: 3,
     title: "Certification: Cisco CCNA Switching & Routing",
     subTitle: "2013",
-    list: [
-    ],
+    list: [],
   },
   {
     id: 4,
     title: "Certification: OWASP Web Developer Security",
     subTitle: "2019 | 2022 | 2023",
-    list: [
-    ],
+    list: [],
   },
   {
     id: 5,
     title: "Certification: Certified SAFe® 5.0 practitioner",
     subTitle: "2020",
-    list: [
-    ],
+    list: [],
   },
 ];
 
