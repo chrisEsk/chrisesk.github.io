@@ -4,9 +4,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
-import useScrollActive from "hooks/useScrollActive";
 
 import me from "../public/me.png";
 import AboutBgSvg from "@/components/AboutBgSvg";
@@ -88,20 +86,16 @@ const AboutSection: React.FC = () => {
   }, []);
 
   const eduRef = useRef<HTMLDivElement>(null);
-
-  // Set active link for about section
-  const aboutSection = useScrollActive(sectionRef);
-  const { onSectionChange } = useSection();
-  useEffect(() => {
-    aboutSection ? onSectionChange!("who am i?") : onSectionChange!("");
-  }, [aboutSection, onSectionChange]);
+  const whoamiRef = useRef<HTMLDivElement>(null);
+  const aiExpertiseRef = useRef<HTMLDivElement>(null);
+  const expertiseRef = useRef<HTMLDivElement>(null);
 
   return (
     <div
       ref={sectionRef}
       className="about-panel bg-white dark:bg-[#1B2731] relative"
     >
-      <section id="whoami" className="section">
+      <section ref={whoamiRef} id="whoami" className="section">
         <RoughNotationGroup>
           <div className="text-center">
             <RoughNotation
@@ -186,7 +180,7 @@ const AboutSection: React.FC = () => {
         </RoughNotationGroup>
       </section>
 
-      <section id="ai-expertise" className="section relative overflow-hidden bg-[#eef4ff] dark:bg-[#111d2f]">
+      <section ref={aiExpertiseRef} id="ai-expertise" className="section relative overflow-hidden bg-[#eef4ff] dark:bg-[#111d2f]">
         <div className="pointer-events-none absolute inset-0 opacity-70 [background-image:linear-gradient(rgba(56,123,248,.12)_1px,transparent_1px),linear-gradient(90deg,rgba(56,123,248,.12)_1px,transparent_1px)] [background-size:42px_42px]" />
         <div className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-[#387BF8]/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-40 -left-32 h-96 w-96 rounded-full bg-[#7c3aed]/15 blur-3xl" />
@@ -230,7 +224,7 @@ const AboutSection: React.FC = () => {
         </div>
       </section>
 
-      <section id="expertise" className="section">
+      <section ref={expertiseRef} id="expertise" className="section">
         <div className="text-center">
           <h2 className="section-heading">Expertise</h2>
           <p className="mb-8">Technologies grouped by my level of experience.</p>
