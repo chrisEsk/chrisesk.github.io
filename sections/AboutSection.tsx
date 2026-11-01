@@ -1,8 +1,37 @@
-import { useEffect, useRef } from "react";
+import { createElement, useEffect, useRef } from "react";
 import Image from "next/image";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { FaAws } from "react-icons/fa";
+import {
+  SiAngular,
+  SiBootstrap,
+  SiSharp,
+  SiFigma,
+  SiFirebase,
+  SiGithubactions,
+  SiGoogleads,
+  SiGooglecloud,
+  SiGoogleplay,
+  SiIonic,
+  SiJavascript,
+  SiJenkins,
+  SiLinux,
+  SiMongodb,
+  SiMysql,
+  SiNodedotjs,
+  SiOpenjdk,
+  SiPostgresql,
+  SiPython,
+  SiReact,
+  SiSass,
+  SiSvelte,
+  SiSupabase,
+  SiTailwindcss,
+  SiTypescript,
+  SiVuedotjs,
+} from "react-icons/si";
 
 import useOnScreen from "hooks/useOnScreen";
 
@@ -335,27 +364,79 @@ const AboutSection: React.FC = () => {
           </p>
         </div>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {expertiseLevels.map(({ level, technologies }) => (
-            <section
-              className="expertise-card rounded-md border border-marrsgreen/30 p-5"
-              key={level}
-            >
-              <h3 className="text-xl font-medium text-marrsgreen dark:text-carrigreen">
-                {level}
-              </h3>
-              <ul className="mt-3 list-disc pl-5">
-                {technologies.map((technology) => (
-                  <li key={technology}>{technology}</li>
-                ))}
-              </ul>
-            </section>
-          ))}
+          {expertiseLevels.map(({ level, technologies }) => {
+            const [stars, label] = level.split(" · ");
+
+            return (
+              <section
+                className="expertise-card rounded-md border border-marrsgreen/30 p-5"
+                key={level}
+              >
+                <h3 className="text-xl font-medium text-marrsgreen dark:text-carrigreen">
+                  <span className="text-yellow-400">{stars}</span> · {label}
+                </h3>
+                <ul className="mt-3 grid gap-2">
+                  {technologies.map((technology) => {
+                    const Icon = getTechnologyIcon(technology);
+
+                    return (
+                      <li key={technology} className="flex items-start gap-2">
+                        {Icon ? (
+                          createElement(Icon as any, {
+                            "aria-hidden": true,
+                            className:
+                              "mt-1 h-[1em] w-[1em] shrink-0 text-marrsgreen dark:text-carrigreen",
+                          })
+                        ) : (
+                          <span
+                            aria-hidden="true"
+                            className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-marrsgreen dark:bg-carrigreen"
+                          />
+                        )}
+                        <span>{technology}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            );
+          })}
         </div>
       </section>
 
       <AboutBgSvg />
     </div>
   );
+};
+
+const getTechnologyIcon = (technology: string) => {
+  if (technology.includes("Angular")) return SiAngular;
+  if (technology.includes("TypeScript")) return SiTypescript;
+  if (technology.includes("Ionic")) return SiIonic;
+  if (technology.includes("React")) return SiReact;
+  if (technology.includes("Vue")) return SiVuedotjs;
+  if (technology.includes("Svelte")) return SiSvelte;
+  if (technology.includes("AWS")) return FaAws;
+  if (technology.includes("Node.js")) return SiNodedotjs;
+  if (technology.includes("C#")) return SiSharp;
+  if (technology.includes("Python")) return SiPython;
+  if (technology.includes("JavaScript")) return SiJavascript;
+  if (technology.includes("Java")) return SiOpenjdk;
+  if (technology.includes("Bootstrap")) return SiBootstrap;
+  if (technology.includes("Tailwind")) return SiTailwindcss;
+  if (technology.includes("Sass")) return SiSass;
+  if (technology.includes("MySQL")) return SiMysql;
+  if (technology.includes("PostgreSQL")) return SiPostgresql;
+  if (technology.includes("Figma")) return SiFigma;
+  if (technology.includes("MongoDB")) return SiMongodb;
+  if (technology.includes("Firebase")) return SiFirebase;
+  if (technology.includes("Google Cloud")) return SiGooglecloud;
+  if (technology.includes("Google Play")) return SiGoogleplay;
+  if (technology.includes("Google Ads")) return SiGoogleads;
+  if (technology.includes("Jenkins")) return SiJenkins;
+  if (technology.includes("Linux")) return SiLinux;
+  if (technology.includes("GitHub Actions")) return SiGithubactions;
+  return null;
 };
 
 const expertiseLevels = [
@@ -378,7 +459,7 @@ const expertiseLevels = [
       "Node.js",
       "Heroku",
       "MySQL, PostgreSQL",
-      "Jasmine, Karma, Cypress, Jest, Mocha, Chai",
+      "Jasmine, Karma, Cypress, Jest, Mocha, Chai, Vite",
       "Cloudinary",
       "Figma",
       "Chromecast SDK",
@@ -389,9 +470,10 @@ const expertiseLevels = [
     technologies: [
       "React, Vue, Svelte",
       "Nx",
-      "AWS",
+      "AWS (mostly Lambda functions and Secrets Manager)",
       "C#",
       "Java",
+      "Linux",
       "Windows Server",
       "ActionScript",
       "GitHub Actions",
@@ -403,6 +485,9 @@ const expertiseLevels = [
     technologies: [
       "MongoDB",
       "Python",
+      "Firebase",
+      "Google Cloud Console",
+      "Google Play Console",
       "Google Ads Manager",
       "Jenkins",
       "Travis",
@@ -425,8 +510,8 @@ const educationInfo = [
   },
   {
     id: 2,
-    title: "High School Bachelor's Degree",
-    subTitle: "Kamuk School | 2011",
+    title: "High School Diploma",
+    subTitle: "Kamuk School & Boston Institute | 2011",
     list: [],
   },
   {

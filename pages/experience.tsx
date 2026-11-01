@@ -16,7 +16,7 @@ const roles = [
     "Sr Adv Web UI",
     "Globant",
     "December 2021 – May 2026",
-    "Technical direction, application development, code reviews, task allocation, and troubleshooting.",
+    "Technical direction, application development, code reviews, task allocation, troubleshooting, and serving as a gatekeeper for the studio.",
     "/logo_globant.png",
   ],
   [

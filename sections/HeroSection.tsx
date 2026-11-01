@@ -113,11 +113,16 @@ const HeroSection: React.FC = () => {
             Math.sin(step * 0.012 + motion + ribbon * 0.8) * (18 + ribbon * 7) +
             Math.sin(step * 0.026 - motion * 1.7) * 9;
           const y =
-            originY + (step - originX) * (0.16 + ribbon * 0.018) + wave - ribbon * 24;
+            originY +
+            (step - originX) * (0.16 + ribbon * 0.018) +
+            wave -
+            ribbon * 24;
           if (step === -20) context.moveTo(step, y);
           else context.lineTo(step, y);
         }
-        context.strokeStyle = `rgba(${ribbon % 2 ? "124,92,255" : "56,189,248"},${0.12 - ribbon * 0.015})`;
+        context.strokeStyle = `rgba(${
+          ribbon % 2 ? "124,92,255" : "56,189,248"
+        },${0.12 - ribbon * 0.015})`;
         context.lineWidth = ribbon === 1 ? 1.8 : 1;
         context.stroke();
       }
@@ -132,7 +137,13 @@ const HeroSection: React.FC = () => {
       context.lineWidth = 1;
       for (let ring = 0; ring < 3; ring += 1) {
         context.beginPath();
-        context.arc(cx, cy, 38 + ring * 28 + Math.sin(motion * 4 + ring) * 5, 0, Math.PI * 2);
+        context.arc(
+          cx,
+          cy,
+          38 + ring * 28 + Math.sin(motion * 4 + ring) * 5,
+          0,
+          Math.PI * 2
+        );
         context.stroke();
       }
       points.forEach((point, index) => {
@@ -243,13 +254,14 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="my-4 mt-2 md:mb-8">
             <p className="mb-2 text-xs">
-              Programmer, entrepreneur, teacher, and lifelong learner.
+              INTJ, curious by nature, focused on making things useful.
             </p>
             <p>
-              With experience in Angular, Vue, React, and NextJS on the
-              frontend, and NodeJs, C#, Java, and Python on the backend, I bring
-              a unique combination of technical skills and creative
-              problem-solving to every project I work on.
+              I’m a software engineer, entrepreneur, and teacher who enjoys
+              turning ambitious ideas into useful products. I specialize in
+              building thoughtful frontend experiences and reliable full-stack
+              systems with technologies like Angular, React, Vue, Node.js, Java
+              and more.
             </p>
           </div>
           <LinkButton href={`mailto:${CONTACT_EMAIL}`}>Contact me!</LinkButton>
