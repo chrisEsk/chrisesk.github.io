@@ -14,7 +14,18 @@ module.exports = {
       xl: "1440px",
     },
     fontFamily: {
-      sans: ['"Jost"', "sans-serif"],
+      sans: [
+        '"Iosevka"',
+        '"Iosevka Web"',
+        '"Iosevka Term"',
+        "ui-monospace",
+        "SFMono-Regular",
+        "Menlo",
+        "Monaco",
+        "Consolas",
+        '"Liberation Mono"',
+        "monospace",
+      ],
     },
     extend: {
       colors: {

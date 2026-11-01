@@ -95,7 +95,15 @@ export default function Experience() {
                     {period}
                   </p>
                   <h2 className="text-xl font-medium">{role}</h2>
-                  <p className="font-medium">{company}</p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="font-medium">{company}</p>
+                    {(company === "TheSlider" ||
+                      company === "Miguitas Bakery") && (
+                      <span className="rounded-full border border-marrsgreen/30 bg-marrsgreen/10 px-2 py-0.5 text-xs font-medium text-marrsgreen dark:border-carrigreen/30 dark:bg-carrigreen/10 dark:text-carrigreen">
+                        Side project
+                      </span>
+                    )}
+                  </div>
                 </div>
                 {image && (
                   <Image
