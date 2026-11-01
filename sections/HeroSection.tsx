@@ -102,11 +102,39 @@ const HeroSection: React.FC = () => {
       const rect = canvas.getBoundingClientRect();
       mouse = { x: event.clientX - rect.left, y: event.clientY - rect.top };
     };
+    const drawRibbons = (time: number) => {
+      const motion = time * 0.00035;
+      const originX = width * 0.58;
+      const originY = height * 0.53;
+      for (let ribbon = 0; ribbon < 4; ribbon += 1) {
+        context.beginPath();
+        for (let step = -20; step <= width + 20; step += 14) {
+          const wave =
+            Math.sin(step * 0.012 + motion + ribbon * 0.8) * (18 + ribbon * 7) +
+            Math.sin(step * 0.026 - motion * 1.7) * 9;
+          const y =
+            originY + (step - originX) * (0.16 + ribbon * 0.018) + wave - ribbon * 24;
+          if (step === -20) context.moveTo(step, y);
+          else context.lineTo(step, y);
+        }
+        context.strokeStyle = `rgba(${ribbon % 2 ? "124,92,255" : "56,189,248"},${0.12 - ribbon * 0.015})`;
+        context.lineWidth = ribbon === 1 ? 1.8 : 1;
+        context.stroke();
+      }
+    };
     const draw = (time: number) => {
       context.clearRect(0, 0, width, height);
       const cx = width * 0.63 + (mouse.x - width / 2) * 0.035;
       const cy = height * 0.48 + (mouse.y - height / 2) * 0.035;
       const motion = time * 0.00025;
+      drawRibbons(time);
+      context.strokeStyle = "rgba(56,189,248,.18)";
+      context.lineWidth = 1;
+      for (let ring = 0; ring < 3; ring += 1) {
+        context.beginPath();
+        context.arc(cx, cy, 38 + ring * 28 + Math.sin(motion * 4 + ring) * 5, 0, Math.PI * 2);
+        context.stroke();
+      }
       points.forEach((point, index) => {
         point.y -= point.speed * 0.18;
         if (point.y < -20) point.y = height + 20;
